@@ -26,7 +26,7 @@ TRAIN_DATA = [
     ("Bachelor's degree in Computer science, software engineering, or related field",
      {"entities": [(0, 17, "EDUCATION"), (21, 37, "DEGREE_FIELD"), (39, 59, "DEGREE_FIELD")]}),
     ("3+ years of experience in a similar role", {"entities": [(0, 30, "EXPERIENCE")]}),
-    ("Proficient in C++, UNIX/Linux, Python", {"entities": [(13, 16, "SKILL"), (18, 28, "SKILL"), (30, 36, "SKILL")]}),
+    ("Proficient in C++, UNIX/Linux, Python", {"entities": [(0, 10, "DETERMINER"), (13, 16, "SKILL"), (18, 28, "SKILL"), (30, 36, "SKILL")]}),
     ("Experience with AWS Cloud Services", {"entities": [(15, 32, "SKILL")]}),
     
     # Job 4 - Apprentice Developer
