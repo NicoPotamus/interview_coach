@@ -10,18 +10,17 @@ from spacy.training import offsets_to_biluo_tags  # Import offsets_to_biluo_tags
 TRAIN_DATA = [
     # char ranges are the starting letter to the char after the last letter ie 
     # Job 1 - Frontend Developer
-    ("5+ years of experience as a UI developer", {"entities": [(0, 30, "EXPERIENCE")]}),
-    ("ADA/WCAG/508 knowledge and testing experience", {"entities": [(0, 11, "SKILL"), (25, 44, "SKILL")]}),  # Adjusted offsets
-    ("3 days a week on site in downtown Chicago", {"entities": [(0, 17, "WORK_SCHEDULE"), (29, 44, "LOCATION")]}),  # Adjusted offsets
-    ("60++/hr W2", {"entities": [(0, 8, "SALARY")]}),
+    ("5+ years of experience as a UI developer", {"entities": [(0, 8, "EXPERIENCE")]}),
+    ("ADA/WCAG/508 knowledge and testing experience", {"entities": [(0, 12, "SKILL"), (26, 34, "SKILL")]}),  # Adjusted offsets
+    ("60++/hr W2", {"entities": [(0, 7, "SALARY")]}),
     
     # Job 2 - Java Developer
     ("9+ years development experience using Java, Springboot, SQL and NoSQL databases", 
-     {"entities": [(0, 30, "EXPERIENCE"), (37, 41, "SKILL"), (43, 53, "SKILL"), (55, 58, "SKILL"), (63, 68, "SKILL")]}),
+     {"entities": [(0, 3, "EXPERIENCE"), (37, 42, "SKILL"), (43, 54, "SKILL"), (55, 59, "SKILL"), (63, 69, "SKILL")]}),
     ("3+ years of experience designing and building cloud-native applications", 
-     {"entities": [(0, 24, "EXPERIENCE"), (44, 70, "SKILL")]}),
+     {"entities": [(0, 2, "EXPERIENCE"), (45, 58, "SKILL")]}),
     ("Experience in Single Page Applications using React/Redux",
-     {"entities": [(13, 35, "SKILL"), (42, 53, "SKILL")]}),
+     {"entities": [(13, 38, "SKILL"), (44, 50, "SKILL"), (50,56, "SKILL")]}),
     
     # Job 3 - United Airlines Developer
     ("Bachelor's degree in Computer science, software engineering, or related field",
