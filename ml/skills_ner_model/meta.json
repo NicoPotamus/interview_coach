@@ -19,16 +19,15 @@
   "labels":{
     "ner":[
       "DEGREE_FIELD",
+      "DETERMINER",
       "EDUCATION",
       "EXPERIENCE",
-      "LOCATION",
       "METHODOLOGY",
       "REQUIREMENT",
       "SALARY",
       "SKILL",
       "SOFT_SKILL",
-      "WORK_ARRANGEMENT",
-      "WORK_SCHEDULE"
+      "WORK_ARRANGEMENT"
     ]
   },
   "pipeline":[
