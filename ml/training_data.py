@@ -4,7 +4,7 @@ from spacy.tokens import Span, DocBin
 import csv
 
 TEXTS = []
-with open("./related_skills.csv", mode='r') as f:
+with open("/Users/bryan/School/Spring 2025/Projects/InterviewCoach/interview_coach/ml/related_skills.csv", mode='r') as f:
     reader = csv.reader(f, delimiter=',')
     next(reader)  # Skip the first row
     for row in reader:
