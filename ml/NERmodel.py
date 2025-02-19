@@ -93,7 +93,7 @@ nlp.to_disk("skills_ner_model")
 # Test the model
 print("Loading model...")
 nlp = spacy.load("skills_ner_model")  # Ensure the model is loaded correctly
-test_text = "Must be proficient in java and project management"
+test_text = "Proficient in C++, UNIX/Linux, Python"
 doc = nlp(test_text)
 for ent in doc.ents:
     print(f"{ent.text} ({ent.label_})")
