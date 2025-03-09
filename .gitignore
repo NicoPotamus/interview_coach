@@ -45,3 +45,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Data files
+NeuralNetwork/data/processed_skills.csv
+NeuralNetwork/data/skills.txt
+NeuralNetwork/data/spacy_training_data.json
+NeuralNetwork/data/work_activities.txt
+NeuralNetwork/data/occupation_data.txt
+
+# Models
+NeuralNetwork/models
