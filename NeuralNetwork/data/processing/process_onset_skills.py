@@ -27,4 +27,4 @@ merged_df = merged_df.sort_values(by="Importance", ascending=False)
 output_file = "../processed_skills.csv"
 merged_df.to_csv(output_file, index=False)
 
-print(f"✅ Processed skills data saved as {output_file}")
+print(f"Processed skills data saved as {output_file}")

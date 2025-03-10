@@ -4,22 +4,22 @@ import spacy
 best_model = spacy.load("../models/trained_ner_model_best")
 regular_model = spacy.load("../models/trained_ner_model")
 
-text = "The ideal candidate should have expertise in Java, Spring Boot, and AWS."
+# Load your trained NER model
+nlp = regular_model
+# Example job description
+job_description = """
+We are looking for an experienced Systems Administrator with expertise in Hyper-V, VMware, and Windows Server management.
+The ideal candidate should have a strong background in networking, including proficiency in DNS, DHCP, and VPN configuration.
+Knowledge of cloud platforms such as AWS and Azure is highly preferred.
+"""
 
+# Process the text through the model
+doc = nlp(job_description)
 
-def extract_skills(nlp, text, model_name):
-    doc = nlp(text)
-    print(f"\n Detected Skills from {model_name}:")
-    
-    for ent in doc.ents:
-        if ent.label_ == "SKILL":
-            # Approximate confidence estimation using token probabilities
-            token_probs = [token.prob for token in ent]
-            avg_confidence = sum(token_probs) / len(token_probs) if token_probs else "N/A"
-            print(f"- {ent.text} (Confidence: {avg_confidence})")
+# Extract detected skills
+detected_skills = [(ent.text, ent.label_) for ent in doc.ents if ent.label_ == "SKILL"]
 
-print("\n--- Best Model ---")
-extract_skills(best_model, text, "Best Model")
-
-print("\n--- Regular Model ---")
-extract_skills(regular_model, text, "Regular Model")
+# Print results
+print("Detected Skills:")
+for skill, label in detected_skills:
+    print(f"- {skill}")

@@ -14,5 +14,5 @@ for text, annotations in training_data:
     biluo_tags = offsets_to_biluo_tags(nlp.make_doc(text), entities)
 
     if "-" in biluo_tags:
-        print(f"🚨 Misaligned entity in: {text}")
+        print(f"Misaligned entity in: {text}")
         print(f"Entities: {entities}\n")

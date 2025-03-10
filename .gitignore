@@ -52,6 +52,7 @@ NeuralNetwork/data/skills.txt
 NeuralNetwork/data/spacy_training_data.json
 NeuralNetwork/data/work_activities.txt
 NeuralNetwork/data/occupation_data.txt
+NeuralNetwork/data/linkedin_skills.txt
 
 # Models might be too big
 NeuralNetwork/models
