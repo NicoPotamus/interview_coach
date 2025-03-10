@@ -1,10 +1,14 @@
 from bs4 import BeautifulSoup
 import requests
+import json
+
+from ipRotator import assemble_ip_string  # Use relative import
 
 # function to scrape job urls from a job search page and get a list of urls for each job posting
 def retrieve_job_urls(job_search_url):
     # Make an HTTP GET request to get the HTML of the page
-    response = requests.get(job_search_url)
+    proxy = assemble_ip_string()
+    response = requests.get(job_search_url, proxies={"http": proxy})
 
     # Access the HTML and parse it
     html = response.text
@@ -81,6 +85,7 @@ def search_jobs(keywords, location):
         jobs.append(job)
     
     return jobs
+
     
 #main function
 def main():
@@ -94,7 +99,7 @@ def main():
     #print(job_urls)
     
     # test url factory
-    jobs = search_jobs("Software Engineer", "USA")
+    jobs = search_jobs("Cyber security", "USA")
     print(jobs)
     
     
