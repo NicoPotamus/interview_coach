@@ -1,9 +1,11 @@
 import json
 import random
 import requests
+import os
 
 # Open and read the JSON file
-with open('proxies.json', 'r') as file:
+file_path = os.path.join(os.path.dirname(__file__), 'proxies.json')
+with open(file_path, 'r') as file:
     data = json.load(file)
 
 def get_random_proxy():

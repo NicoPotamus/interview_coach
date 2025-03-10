@@ -1,6 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/scraper/venv
+server/model/scraper/venv
 
 ./ml/skills_ner_model
 

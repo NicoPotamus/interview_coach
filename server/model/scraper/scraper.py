@@ -1,8 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
-import json
 
-from ipRotator import assemble_ip_string  # Use relative import
+from .ipRotator import assemble_ip_string  # Use relative import
 
 # function to scrape job urls from a job search page and get a list of urls for each job posting
 def retrieve_job_urls(job_search_url):
@@ -40,7 +39,7 @@ def scrape_job(job_url):
     soup = BeautifulSoup(html, "html.parser")
     
     title_element = soup.select_one("h1")
-    title = title_element.get_text().strip()
+    title = title_element.get_text().strip() if title_element else "No title found"
     
     company_element = soup.select_one("[data-tracking-control-name=\"public_jobs_topcard-org-name\"]")
     company_name = company_element.get_text().strip()
