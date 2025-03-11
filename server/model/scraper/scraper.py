@@ -42,11 +42,11 @@ def scrape_job(job_url):
     title = title_element.get_text().strip() if title_element else "No title found"
     
     company_element = soup.select_one("[data-tracking-control-name=\"public_jobs_topcard-org-name\"]")
-    company_name = company_element.get_text().strip()
-    company_url = company_element["href"]
+    company_name = company_element.get_text().strip() if company_element else "No Company Name found"
+    company_url = company_element["href"] if company_element else "No Company Name found"
     
     location_element = soup.select_one("[data-tracking-control-name=\"public_jobs_topcard-org-name\"]")
-    location = location_element.get_text().strip()
+    location = location_element.get_text().strip() if location_element else "No location Name found"
     
     salary_element = soup.select_one(".salary")
     if salary_element:
@@ -57,7 +57,11 @@ def scrape_job(job_url):
     
     # now we gotta play with the criteria to get that information nicely
     description_element = soup.select_one(".description__text .show-more-less-html")
-    description = description_element.get_text(separator=". ").strip()
+    description= ""
+    if description_element:
+        description = description_element.get_text(separator=" ").replace('\n', ' ').strip()
+    else:
+        description = "No description found."
     
     job = {
         "title": title,
