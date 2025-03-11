@@ -47,8 +47,8 @@ yarn-error.log*
 next-env.d.ts
 
 # Data files
-NeuralNetwork/data/processed_skills.csv
-NeuralNetwork/data/linkedin_skills.txt
+#NeuralNetwork/data/processed_skills.csv
+#NeuralNetwork/data/linkedin_skills.txt
 
 # Models might be too big
 #NeuralNetwork/models
