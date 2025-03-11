@@ -1,0 +1,2738 @@
+{
+    "Software Engineer": {
+        "status": "OK",
+        "request_id": "f2f53279-b79a-4a16-afa5-da738c619dd4",
+        "parameters": {
+            "job_title": "software engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Software Engineer",
+                "min_salary": 129653.03,
+                "max_salary": 208561.54,
+                "median_salary": 163169.69,
+                "min_base_salary": 96353.59,
+                "max_base_salary": 146402.58,
+                "median_base_salary": 118770.43,
+                "min_additional_pay": 33299.44,
+                "max_additional_pay": 62158.96,
+                "median_additional_pay": 44399.26,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 679674,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Software%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Data Scientist": {
+        "status": "OK",
+        "request_id": "19fc28d7-eba9-4a34-88ae-3792b93d56d8",
+        "parameters": {
+            "job_title": "data scientist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Data Scientist",
+                "min_salary": 131370.25,
+                "max_salary": 212038.6,
+                "median_salary": 165579.36,
+                "min_base_salary": 96602.03,
+                "max_base_salary": 147137.93,
+                "median_base_salary": 119221.74,
+                "min_additional_pay": 34768.22,
+                "max_additional_pay": 64900.67,
+                "median_additional_pay": 46357.62,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 52390,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Data%20Scientist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Machine Learning Engineer": {
+        "status": "OK",
+        "request_id": "c689b300-9e3c-4e9f-95b9-249a7b0b9b17",
+        "parameters": {
+            "job_title": "machine learning engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Machine Learning Engineer",
+                "min_salary": 134911.48,
+                "max_salary": 215425.48,
+                "median_salary": 169166.51,
+                "min_base_salary": 100937.83,
+                "max_base_salary": 152008,
+                "median_base_salary": 123868.31,
+                "min_additional_pay": 33973.65,
+                "max_additional_pay": 63417.48,
+                "median_additional_pay": 45298.2,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 7676,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Machine%20Learning%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Cybersecurity Analyst": {
+        "status": "OK",
+        "request_id": "1b7a2d80-db50-47b9-97a4-9202753303c2",
+        "parameters": {
+            "job_title": "cybersecurity analyst",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Cybersecurity Analyst",
+                "min_salary": 100582.32,
+                "max_salary": 171105.3,
+                "median_salary": 130269.64,
+                "min_base_salary": 74322.62,
+                "max_base_salary": 122087.2,
+                "median_base_salary": 95256.71,
+                "min_additional_pay": 26259.7,
+                "max_additional_pay": 49018.1,
+                "median_additional_pay": 35012.93,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1893,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Cybersecurity%20Analyst&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Cloud Solutions Architect": {
+        "status": "OK",
+        "request_id": "e6ae5555-faea-4c60-bd25-2b90a4fb40d9",
+        "parameters": {
+            "job_title": "cloud solutions architect",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Cloud Solution Architect",
+                "min_salary": 145455.1,
+                "max_salary": 237657.29,
+                "median_salary": 184805.48,
+                "min_base_salary": 115033.6,
+                "max_base_salary": 180870.49,
+                "median_base_salary": 144243.48,
+                "min_additional_pay": 30421.5,
+                "max_additional_pay": 56786.8,
+                "median_additional_pay": 40562,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 789,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Cloud%20Solution%20Architect&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "DevOps Engineer": {
+        "status": "OK",
+        "request_id": "eeb2cbfb-95d8-494a-a8f0-5b6e848a3efd",
+        "parameters": {
+            "job_title": "devops engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Devops Engineer",
+                "min_salary": 117912.21,
+                "max_salary": 175077.87,
+                "median_salary": 142590.38,
+                "min_base_salary": 93493.67,
+                "max_base_salary": 129496.59,
+                "median_base_salary": 110032.32,
+                "min_additional_pay": 24418.54,
+                "max_additional_pay": 45581.28,
+                "median_additional_pay": 32558.06,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 16135,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Devops%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Full-Stack Developer": {
+        "status": "OK",
+        "request_id": "0966db56-1051-49c1-a05a-7dd2c7cc39f3",
+        "parameters": {
+            "job_title": "full-stack developer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Full Stack Developer",
+                "min_salary": 94154.06,
+                "max_salary": 169401.5,
+                "median_salary": 125478.27,
+                "min_base_salary": 69654.92,
+                "max_base_salary": 123669.77,
+                "median_base_salary": 92812.75,
+                "min_additional_pay": 24499.14,
+                "max_additional_pay": 45731.73,
+                "median_additional_pay": 32665.52,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 10063,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Full%20Stack%20Developer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "IT Support Specialist": {
+        "status": "OK",
+        "request_id": "de524054-2f4c-4e79-95ce-41332deda20f",
+        "parameters": {
+            "job_title": "it support specialist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "IT Support Specialist",
+                "min_salary": 54905.99,
+                "max_salary": 81490.78,
+                "median_salary": 66601.74,
+                "min_base_salary": 48244.02,
+                "max_base_salary": 69055.1,
+                "median_base_salary": 57719.11,
+                "min_additional_pay": 6661.97,
+                "max_additional_pay": 12435.68,
+                "median_additional_pay": 8882.63,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 8946,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=IT%20Support%20Specialist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Embedded Systems Engineer": {
+        "status": "OK",
+        "request_id": "598ef3e5-217f-42fd-aa21-7c2d5a9276d4",
+        "parameters": {
+            "job_title": "embedded systems engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Embedded Systems Engineer",
+                "min_salary": 128392.78,
+                "max_salary": 203642.26,
+                "median_salary": 160723.6,
+                "min_base_salary": 103210.86,
+                "max_base_salary": 156636,
+                "median_base_salary": 127147.7,
+                "min_additional_pay": 25181.92,
+                "max_additional_pay": 47006.26,
+                "median_additional_pay": 33575.9,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 445,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Embedded%20Systems%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "AI Research Scientist": {
+        "status": "OK",
+        "request_id": "c806f6cd-4835-4522-b8cd-2f72fd8df0c2",
+        "parameters": {
+            "job_title": "ai research scientist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "AI Research Scientist",
+                "min_salary": 137438.61,
+                "max_salary": 228209.08,
+                "median_salary": 175542.94,
+                "min_base_salary": 94664.32,
+                "max_base_salary": 148363.73,
+                "median_base_salary": 118510.55,
+                "min_additional_pay": 42774.29,
+                "max_additional_pay": 79845.35,
+                "median_additional_pay": 57032.39,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 59,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=AI%20Research%20Scientist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Financial Analyst": {
+        "status": "OK",
+        "request_id": "13ab4c1c-f8b7-447f-a8c8-301a0864baac",
+        "parameters": {
+            "job_title": "financial analyst",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Financial Analyst",
+                "min_salary": 85580.09,
+                "max_salary": 139410.35,
+                "median_salary": 108399.17,
+                "min_base_salary": 63370.24,
+                "max_base_salary": 97951.95,
+                "median_base_salary": 78786.03,
+                "min_additional_pay": 22209.85,
+                "max_additional_pay": 41458.4,
+                "median_additional_pay": 29613.14,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 69701,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Financial%20Analyst&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Investment Banker": {
+        "status": "OK",
+        "request_id": "f5a0a3c4-ec0a-464a-80a5-e8fdc8ecf344",
+        "parameters": {
+            "job_title": "investment banker",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Investment-Banker",
+                "min_salary": 304847.44,
+                "max_salary": 569048.562,
+                "median_salary": 406463.26,
+                "min_base_salary": 133836.36000000002,
+                "max_base_salary": 249827.872,
+                "median_base_salary": 178448.48,
+                "min_additional_pay": 171011.08,
+                "max_additional_pay": 319220.69,
+                "median_additional_pay": 228014.78,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 28,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Investment-Banker&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Actuary": {
+        "status": "OK",
+        "request_id": "5f494164-4b32-4128-9a53-9e272beaa0c4",
+        "parameters": {
+            "job_title": "actuary",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Actuary",
+                "min_salary": 166907.38,
+                "max_salary": 287431.54,
+                "median_salary": 216906.37,
+                "min_base_salary": 105726.98,
+                "max_base_salary": 173228.14,
+                "median_base_salary": 135332.51,
+                "min_additional_pay": 61180.4,
+                "max_additional_pay": 114203.4,
+                "median_additional_pay": 81573.86,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1967,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Actuary&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Risk Management Specialist": {
+        "status": "OK",
+        "request_id": "59b15b44-47db-436f-9d26-83a6d1024133",
+        "parameters": {
+            "job_title": "risk management specialist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Risk Management Specialist",
+                "min_salary": 83337.36,
+                "max_salary": 146733.2,
+                "median_salary": 109940.59,
+                "min_base_salary": 64301.42,
+                "max_base_salary": 111199.45,
+                "median_base_salary": 84559.34,
+                "min_additional_pay": 19035.94,
+                "max_additional_pay": 35533.75,
+                "median_additional_pay": 25381.25,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1979,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Risk%20Management%20Specialist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Accountant": {
+        "status": "OK",
+        "request_id": "5815c691-e1fe-4282-b712-21adcc5d78b2",
+        "parameters": {
+            "job_title": "accountant",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Accountant",
+                "min_salary": 68042.59,
+                "max_salary": 111512.68,
+                "median_salary": 86795.31,
+                "min_base_salary": 59452.36,
+                "max_base_salary": 95477.58,
+                "median_base_salary": 75341.67,
+                "min_additional_pay": 8590.23,
+                "max_additional_pay": 16035.1,
+                "median_additional_pay": 11453.64,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 59549,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Accountant&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Management Consultant": {
+        "status": "OK",
+        "request_id": "705a73b3-8068-4bfa-997c-517553437e63",
+        "parameters": {
+            "job_title": "management consultant",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Management Consultant",
+                "min_salary": 141569.92,
+                "max_salary": 255398.72,
+                "median_salary": 188663.64,
+                "min_base_salary": 96845.95,
+                "max_base_salary": 171913.98,
+                "median_base_salary": 129031.68,
+                "min_additional_pay": 44723.97,
+                "max_additional_pay": 83484.74,
+                "median_additional_pay": 59631.96,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 4871,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Management%20Consultant&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Payroll Administrator": {
+        "status": "OK",
+        "request_id": "0cd90a37-6c0e-48dc-89d1-94eb4f144d74",
+        "parameters": {
+            "job_title": "payroll administrator",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Payroll Administrator",
+                "min_salary": 57199.76,
+                "max_salary": 85841.01,
+                "median_salary": 69805.23,
+                "min_base_salary": 50880.46,
+                "max_base_salary": 74044.97,
+                "median_base_salary": 61379.49,
+                "min_additional_pay": 6319.3,
+                "max_additional_pay": 11796.04,
+                "median_additional_pay": 8425.74,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 2170,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Payroll%20Administrator&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Tax Advisor": {
+        "status": "OK",
+        "request_id": "9ae72fac-f910-44e1-8163-503357866533",
+        "parameters": {
+            "job_title": "tax advisor",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Tax Advisor",
+                "min_salary": 91109.25,
+                "max_salary": 170070.596,
+                "median_salary": 121479,
+                "min_base_salary": 64881.48,
+                "max_base_salary": 121112.096,
+                "median_base_salary": 86508.64,
+                "min_additional_pay": 26227.77,
+                "max_additional_pay": 48958.5,
+                "median_additional_pay": 34970.36,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 289,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Tax%20Advisor&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Business Intelligence Analyst": {
+        "status": "OK",
+        "request_id": "d0d67e18-9fb3-4bac-827e-d86c17e2e856",
+        "parameters": {
+            "job_title": "business intelligence analyst",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Business Intelligence Analyst",
+                "min_salary": 106782.93,
+                "max_salary": 176326.34,
+                "median_salary": 136294.76,
+                "min_base_salary": 81408.48,
+                "max_base_salary": 128960.7,
+                "median_base_salary": 102462.16,
+                "min_additional_pay": 25374.45,
+                "max_additional_pay": 47365.64,
+                "median_additional_pay": 33832.6,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 8198,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Business%20Intelligence%20Analyst&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Supply Chain Manager": {
+        "status": "OK",
+        "request_id": "11d3ff5e-4554-43d9-aa29-59fdfbc826aa",
+        "parameters": {
+            "job_title": "supply chain manager",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Supply-Chain-Manager",
+                "min_salary": 119435.41,
+                "max_salary": 194018.94,
+                "median_salary": 151135.35,
+                "min_base_salary": 90275.04,
+                "max_base_salary": 139586.25,
+                "median_base_salary": 112254.86,
+                "min_additional_pay": 29160.37,
+                "max_additional_pay": 54432.69,
+                "median_additional_pay": 38880.49,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 22,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Supply-Chain-Manager&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Registered Nurse": {
+        "status": "OK",
+        "request_id": "89cbdb77-1672-4cfe-a42b-fe4398ce3cd5",
+        "parameters": {
+            "job_title": "registered nurse",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Registered Nurse",
+                "min_salary": 95756.43,
+                "max_salary": 142200.66,
+                "median_salary": 116272.8,
+                "min_base_salary": 86052.2,
+                "max_base_salary": 124086.1,
+                "median_base_salary": 103333.83,
+                "min_additional_pay": 9704.23,
+                "max_additional_pay": 18114.56,
+                "median_additional_pay": 12938.97,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 197974,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Registered%20Nurse&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Physician Assistant": {
+        "status": "OK",
+        "request_id": "6e3405a6-ea61-4802-b4e1-90cce23e4333",
+        "parameters": {
+            "job_title": "physician assistant",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Physician Assistant",
+                "min_salary": 133237.82,
+                "max_salary": 205397.17,
+                "median_salary": 164549.75,
+                "min_base_salary": 111562.84,
+                "max_base_salary": 164937.21,
+                "median_base_salary": 135649.78,
+                "min_additional_pay": 21674.98,
+                "max_additional_pay": 40459.96,
+                "median_additional_pay": 28899.97,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 12836,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Physician%20Assistant&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Medical Laboratory Technician": {
+        "status": "OK",
+        "request_id": "3a6965e8-42a9-490f-b145-5f76d985bb4e",
+        "parameters": {
+            "job_title": "medical laboratory technician",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Medical Laboratory Technician",
+                "min_salary": 58139.36,
+                "max_salary": 87805.69,
+                "median_salary": 71208.06,
+                "min_base_salary": 52340.92,
+                "max_base_salary": 76981.94,
+                "median_base_salary": 63476.81,
+                "min_additional_pay": 5798.44,
+                "max_additional_pay": 10823.75,
+                "median_additional_pay": 7731.25,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 2231,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Medical%20Laboratory%20Technician&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Physical Therapist": {
+        "status": "OK",
+        "request_id": "78f0bf34-98cd-4528-8bca-a4b08f2616a2",
+        "parameters": {
+            "job_title": "physical therapist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Physical Therapist",
+                "min_salary": 111014.1,
+                "max_salary": 174267.09,
+                "median_salary": 138511.97,
+                "min_base_salary": 96160.25,
+                "max_base_salary": 146539.91,
+                "median_base_salary": 118706.84,
+                "min_additional_pay": 14853.85,
+                "max_additional_pay": 27727.18,
+                "median_additional_pay": 19805.13,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 83650,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Physical%20Therapist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Radiologic Technologist": {
+        "status": "OK",
+        "request_id": "bd8bbbec-8324-4554-af2d-e35d287fa41b",
+        "parameters": {
+            "job_title": "radiologic technologist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Radiologic Technologist",
+                "min_salary": 82023.75,
+                "max_salary": 123750.64,
+                "median_salary": 100297.57,
+                "min_base_salary": 71261.05,
+                "max_base_salary": 103660.26,
+                "median_base_salary": 85947.3,
+                "min_additional_pay": 10762.7,
+                "max_additional_pay": 20090.38,
+                "median_additional_pay": 14350.27,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 7444,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Radiologic%20Technologist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Clinical Research Associate": {
+        "status": "OK",
+        "request_id": "6a30b5b3-dfbf-43d7-b280-89287d47704a",
+        "parameters": {
+            "job_title": "clinical research associate",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Clinical Research Associate",
+                "min_salary": 78972.47,
+                "max_salary": 134155.59,
+                "median_salary": 102393.72,
+                "min_base_salary": 63575.54,
+                "max_base_salary": 105414.65,
+                "median_base_salary": 81864.48,
+                "min_additional_pay": 15396.93,
+                "max_additional_pay": 28740.94,
+                "median_additional_pay": 20529.24,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 5993,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Clinical%20Research%20Associate&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Pharmacist": {
+        "status": "OK",
+        "request_id": "3330f89b-884a-4fe7-afe0-1650b48270c2",
+        "parameters": {
+            "job_title": "pharmacist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Pharmacist",
+                "min_salary": 118382.12,
+                "max_salary": 168136.44,
+                "median_salary": 140613.21,
+                "min_base_salary": 108407.57,
+                "max_base_salary": 149517.28,
+                "median_base_salary": 127313.81,
+                "min_additional_pay": 9974.55,
+                "max_additional_pay": 18619.16,
+                "median_additional_pay": 13299.4,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 28414,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Pharmacist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Health Informatics Specialist": {
+        "status": "OK",
+        "request_id": "4b06178a-12ea-42b9-b91c-4a808052c5e9",
+        "parameters": {
+            "job_title": "health informatics specialist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Health Informatics Specialist",
+                "min_salary": 55232.51,
+                "max_salary": 86692.79,
+                "median_salary": 69076.24,
+                "min_base_salary": 52081.14,
+                "max_base_salary": 80810.23,
+                "median_base_salary": 64874.41,
+                "min_additional_pay": 3151.37,
+                "max_additional_pay": 5882.56,
+                "median_additional_pay": 4201.83,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 53,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Health%20Informatics%20Specialist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Nutritionist": {
+        "status": "OK",
+        "request_id": "e6f00418-58da-49b1-9b5c-626b209d3851",
+        "parameters": {
+            "job_title": "nutritionist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Nutritionist",
+                "min_salary": 60815.41,
+                "max_salary": 102899.23,
+                "median_salary": 78777.73,
+                "min_base_salary": 51390.21,
+                "max_base_salary": 85305.51,
+                "median_base_salary": 66210.79,
+                "min_additional_pay": 9425.2,
+                "max_additional_pay": 17593.72,
+                "median_additional_pay": 12566.94,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1075,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Nutritionist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Medical Billing Specialist": {
+        "status": "OK",
+        "request_id": "b98686f6-78a5-4be8-8c5a-f3cd4b41f7f6",
+        "parameters": {
+            "job_title": "medical billing specialist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Medical Billing Specialist",
+                "min_salary": 51570.84,
+                "max_salary": 76138.49,
+                "median_salary": 62213.52,
+                "min_base_salary": 41596.45,
+                "max_base_salary": 57519.64,
+                "median_base_salary": 48914.34,
+                "min_additional_pay": 9974.39,
+                "max_additional_pay": 18618.85,
+                "median_additional_pay": 13299.18,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 3762,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Medical%20Billing%20Specialist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Biomedical Engineer": {
+        "status": "OK",
+        "request_id": "2313e7c1-d69a-42fa-b4da-bc4bc5670723",
+        "parameters": {
+            "job_title": "biomedical engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Biomedical Engineer",
+                "min_salary": 82738.77,
+                "max_salary": 148788.02,
+                "median_salary": 110257.23,
+                "min_base_salary": 61815.77,
+                "max_base_salary": 109731.76,
+                "median_base_salary": 82359.9,
+                "min_additional_pay": 20923,
+                "max_additional_pay": 39056.26,
+                "median_additional_pay": 27897.33,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1885,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Biomedical%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Civil Engineer": {
+        "status": "OK",
+        "request_id": "b1bbebed-f359-480b-8352-68a68686414b",
+        "parameters": {
+            "job_title": "civil engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Civil Engineer",
+                "min_salary": 90151.46,
+                "max_salary": 139113.68,
+                "median_salary": 111360.83,
+                "min_base_salary": 74691.64,
+                "max_base_salary": 110255.35,
+                "median_base_salary": 90747.74,
+                "min_additional_pay": 15459.82,
+                "max_additional_pay": 28858.33,
+                "median_additional_pay": 20613.09,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 12830,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Civil%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Electrical Engineer": {
+        "status": "OK",
+        "request_id": "300c2d1b-20fd-42e7-87ff-5e76931def4d",
+        "parameters": {
+            "job_title": "electrical engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Electrical Engineer",
+                "min_salary": 112203.13,
+                "max_salary": 185902.24,
+                "median_salary": 143464.84,
+                "min_base_salary": 85637.1,
+                "max_base_salary": 136312.31,
+                "median_base_salary": 108043.46,
+                "min_additional_pay": 26566.03,
+                "max_additional_pay": 49589.93,
+                "median_additional_pay": 35421.38,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 7844,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Electrical%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Chemical Engineer": {
+        "status": "OK",
+        "request_id": "c900c115-6d8e-4562-955f-8080964aea38",
+        "parameters": {
+            "job_title": "chemical engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Chemical Engineer",
+                "min_salary": 103875.4975,
+                "max_salary": 188007.87,
+                "median_salary": 138500.66,
+                "min_base_salary": 74016.2175,
+                "max_base_salary": 132270.55,
+                "median_base_salary": 98688.29,
+                "min_additional_pay": 29859.28,
+                "max_additional_pay": 55737.32,
+                "median_additional_pay": 39812.37,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 3216,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Chemical%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Aerospace Engineer": {
+        "status": "OK",
+        "request_id": "8330cda2-1d27-474f-9a04-f65e027f43d0",
+        "parameters": {
+            "job_title": "aerospace engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Aerospace Engineer",
+                "min_salary": 186828.35,
+                "max_salary": 327890.89,
+                "median_salary": 244796.54,
+                "min_base_salary": 107330.27,
+                "max_base_salary": 179494.47,
+                "median_base_salary": 138799.1,
+                "min_additional_pay": 79498.08,
+                "max_additional_pay": 148396.42,
+                "median_additional_pay": 105997.44,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 2922,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Aerospace%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Geospatial Analyst": {
+        "status": "OK",
+        "request_id": "f6b965db-e557-4fe0-9a08-0d9c117c6868",
+        "parameters": {
+            "job_title": "geospatial analyst",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Geospatial Analyst",
+                "min_salary": 87898.17,
+                "max_salary": 151640.44,
+                "median_salary": 114625.54,
+                "min_base_salary": 63910.27,
+                "max_base_salary": 106863.02,
+                "median_base_salary": 82641.67,
+                "min_additional_pay": 23987.9,
+                "max_additional_pay": 44777.42,
+                "median_additional_pay": 31983.87,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1141,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Geospatial%20Analyst&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Materials Scientist": {
+        "status": "OK",
+        "request_id": "97f9ef57-f7f8-4c02-bdd2-dae8bd6f14e6",
+        "parameters": {
+            "job_title": "materials scientist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Materials Scientist",
+                "min_salary": 101646.4,
+                "max_salary": 160705.02,
+                "median_salary": 127106.3,
+                "min_base_salary": 83529.61,
+                "max_base_salary": 126887.01,
+                "median_base_salary": 102950.58,
+                "min_additional_pay": 18116.79,
+                "max_additional_pay": 33818.01,
+                "median_additional_pay": 24155.72,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 497,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Materials%20Scientist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Environmental Engineer": {
+        "status": "OK",
+        "request_id": "b95c7807-d408-4d73-9828-bcef4d886b45",
+        "parameters": {
+            "job_title": "environmental engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Environmental Engineer",
+                "min_salary": 83427.45,
+                "max_salary": 139405.99,
+                "median_salary": 107322.99,
+                "min_base_salary": 68756.85,
+                "max_base_salary": 112020.87,
+                "median_base_salary": 87762.19,
+                "min_additional_pay": 14670.6,
+                "max_additional_pay": 27385.12,
+                "median_additional_pay": 19560.8,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 3726,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Environmental%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Robotics Engineer": {
+        "status": "OK",
+        "request_id": "4ea9eb12-0eed-478f-86f6-d931cadc960a",
+        "parameters": {
+            "job_title": "robotics engineer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Robotics Engineer",
+                "min_salary": 118956.98,
+                "max_salary": 200665.6,
+                "median_salary": 153452.34,
+                "min_base_salary": 89251.95,
+                "max_base_salary": 145216.22,
+                "median_base_salary": 113845.64,
+                "min_additional_pay": 29705.03,
+                "max_additional_pay": 55449.38,
+                "median_additional_pay": 39606.7,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1152,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Robotics%20Engineer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Astrophysicist": {
+        "status": "OK",
+        "request_id": "5eef15fa-d9c3-4829-b729-bba6a5c889b9",
+        "parameters": {
+            "job_title": "astrophysicist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Astrophysicist",
+                "min_salary": 104092.295,
+                "max_salary": 189212.5,
+                "median_salary": 138789.72,
+                "min_base_salary": 73323.225,
+                "max_base_salary": 131776.91,
+                "median_base_salary": 97764.3,
+                "min_additional_pay": 30769.07,
+                "max_additional_pay": 57435.59,
+                "median_additional_pay": 41025.42,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 155,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Astrophysicist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Graphic Designer": {
+        "status": "OK",
+        "request_id": "e3f41cad-3360-4a75-9d64-e335925f5165",
+        "parameters": {
+            "job_title": "graphic designer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Graphic Designer",
+                "min_salary": 59129.45,
+                "max_salary": 98499.5,
+                "median_salary": 76104.52,
+                "min_base_salary": 53140.11,
+                "max_base_salary": 87319.39,
+                "median_base_salary": 68118.73,
+                "min_additional_pay": 5989.34,
+                "max_additional_pay": 11180.11,
+                "median_additional_pay": 7985.79,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 60268,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Graphic%20Designer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "UX/UI Designer": {
+        "status": "OK",
+        "request_id": "7b82aedf-256b-4142-bc23-81fb30b27b1b",
+        "parameters": {
+            "job_title": "ux/ui designer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Designer UX/UI",
+                "min_salary": 125813.07,
+                "max_salary": 226313.53,
+                "median_salary": 167347.59,
+                "min_base_salary": 83973.96,
+                "max_base_salary": 148213.86,
+                "median_base_salary": 111562.11,
+                "min_additional_pay": 41839.11,
+                "max_additional_pay": 78099.67,
+                "median_additional_pay": 55785.48,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 41,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Designer%20UX%2FUI&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Motion Graphics Artist": {
+        "status": "OK",
+        "request_id": "2215ef25-c6d8-4ea1-b354-35a6e8253cb8",
+        "parameters": {
+            "job_title": "motion graphics artist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Motion Graphics Artist",
+                "min_salary": 66578.16,
+                "max_salary": 113559.08,
+                "median_salary": 86809.43,
+                "min_base_salary": 62451.19,
+                "max_base_salary": 105855.4,
+                "median_base_salary": 81306.8,
+                "min_additional_pay": 4126.97,
+                "max_additional_pay": 7703.68,
+                "median_additional_pay": 5502.63,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 254,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Motion%20Graphics%20Artist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Interior Designer": {
+        "status": "OK",
+        "request_id": "30da7f00-923c-4115-a603-0f24f3228e0a",
+        "parameters": {
+            "job_title": "interior designer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Interior Designer",
+                "min_salary": 85535.23,
+                "max_salary": 154745.54,
+                "median_salary": 114046.97,
+                "min_base_salary": 64467.03,
+                "max_base_salary": 115418.24,
+                "median_base_salary": 85956.04,
+                "min_additional_pay": 21068.2,
+                "max_additional_pay": 39327.3,
+                "median_additional_pay": 28090.93,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 10142,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Interior%20Designer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Art Director": {
+        "status": "OK",
+        "request_id": "a3d06224-a92e-485c-948c-9ad32a88e4cd",
+        "parameters": {
+            "job_title": "art director",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Art Director",
+                "min_salary": 80254.68,
+                "max_salary": 134887.79,
+                "median_salary": 103754.54,
+                "min_base_salary": 71962.96,
+                "max_base_salary": 119409.92,
+                "median_base_salary": 92698.92,
+                "min_additional_pay": 8291.72,
+                "max_additional_pay": 15477.87,
+                "median_additional_pay": 11055.62,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 13226,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Art%20Director&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Fashion Designer": {
+        "status": "OK",
+        "request_id": "e31cbd4c-597b-4766-a895-2b1bdd50a64f",
+        "parameters": {
+            "job_title": "fashion designer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Fashion Designer",
+                "min_salary": 106981.225,
+                "max_salary": 199698.282,
+                "median_salary": 142641.63,
+                "min_base_salary": 75350.235,
+                "max_base_salary": 140653.772,
+                "median_base_salary": 100466.98,
+                "min_additional_pay": 31630.99,
+                "max_additional_pay": 59044.51,
+                "median_additional_pay": 42174.65,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1812,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Fashion%20Designer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Video Editor": {
+        "status": "OK",
+        "request_id": "9a1c9acd-df07-4b0f-866a-d27ccc40ee31",
+        "parameters": {
+            "job_title": "video editor",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Video Editor",
+                "min_salary": 51958.185,
+                "max_salary": 94492.29,
+                "median_salary": 69277.58,
+                "min_base_salary": 48141.015,
+                "max_base_salary": 87366.91,
+                "median_base_salary": 64188.02,
+                "min_additional_pay": 3817.17,
+                "max_additional_pay": 7125.38,
+                "median_additional_pay": 5089.56,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 7621,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Video%20Editor&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "3D Modeler": {
+        "status": "OK",
+        "request_id": "2974aa11-698f-4ed0-b794-ab322d59c9e9",
+        "parameters": {
+            "job_title": "3d modeler",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "3D Modeler-artist",
+                "min_salary": 45242.7125,
+                "max_salary": 84453.06799999998,
+                "median_salary": 60323.62,
+                "min_base_salary": 40874.4525,
+                "max_base_salary": 76298.97799999999,
+                "median_base_salary": 54499.27,
+                "min_additional_pay": 4368.26,
+                "max_additional_pay": 8154.09,
+                "median_additional_pay": 5824.35,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 81,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=3D%20Modeler-artist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Digital Marketing Specialist": {
+        "status": "OK",
+        "request_id": "0d57d326-1dae-479e-a185-39b03992791e",
+        "parameters": {
+            "job_title": "digital marketing specialist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Digital Marketing Specialist",
+                "min_salary": 51627.83,
+                "max_salary": 88635.77,
+                "median_salary": 67525.4,
+                "min_base_salary": 48083.47,
+                "max_base_salary": 82019.64,
+                "median_base_salary": 62799.59,
+                "min_additional_pay": 3544.36,
+                "max_additional_pay": 6616.13,
+                "median_additional_pay": 4725.81,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 9566,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Digital%20Marketing%20Specialist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Game Designer": {
+        "status": "OK",
+        "request_id": "8fd03a7d-f976-4dc3-8e2a-5c58915e1c10",
+        "parameters": {
+            "job_title": "game designer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Game Designer",
+                "min_salary": 82655.6175,
+                "max_salary": 154290.482,
+                "median_salary": 110207.49,
+                "min_base_salary": 67068.5475,
+                "max_base_salary": 125194.622,
+                "median_base_salary": 89424.73,
+                "min_additional_pay": 15587.07,
+                "max_additional_pay": 29095.86,
+                "median_additional_pay": 20782.76,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1645,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Game%20Designer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "CNC Machinist": {
+        "status": "OK",
+        "request_id": "3cfc4440-0d0c-4d59-a91c-ba1ed73186e1",
+        "parameters": {
+            "job_title": "cnc machinist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "CNC Machinist",
+                "min_salary": 54217.9,
+                "max_salary": 81144.95,
+                "median_salary": 66082.46,
+                "min_base_salary": 48409.62,
+                "max_base_salary": 70302.83,
+                "median_base_salary": 58338.09,
+                "min_additional_pay": 5808.28,
+                "max_additional_pay": 10842.12,
+                "median_additional_pay": 7744.37,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 8762,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=CNC%20Machinist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Electrician": {
+        "status": "OK",
+        "request_id": "76e9b6fa-99e3-42cc-a868-0e645c7a51ca",
+        "parameters": {
+            "job_title": "electrician",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Electrician",
+                "min_salary": 57195.66,
+                "max_salary": 97371.38,
+                "median_salary": 74386.14,
+                "min_base_salary": 50225.84,
+                "max_base_salary": 84361.04,
+                "median_base_salary": 65093.04,
+                "min_additional_pay": 6969.82,
+                "max_additional_pay": 13010.34,
+                "median_additional_pay": 9293.1,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 11907,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Electrician&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "HVAC Technician": {
+        "status": "OK",
+        "request_id": "41d442ab-6c89-4426-9e4d-7e185de16240",
+        "parameters": {
+            "job_title": "hvac technician",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "HVAC Technician",
+                "min_salary": 66112.37,
+                "max_salary": 99850.99,
+                "median_salary": 80609.18,
+                "min_base_salary": 51288.89,
+                "max_base_salary": 72180.49,
+                "median_base_salary": 60844.54,
+                "min_additional_pay": 14823.48,
+                "max_additional_pay": 27670.5,
+                "median_additional_pay": 19764.64,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 5411,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=HVAC%20Technician&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Plumber": {
+        "status": "OK",
+        "request_id": "2417a9f7-119b-4366-9cc8-eecc167fa6d2",
+        "parameters": {
+            "job_title": "plumber",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Plumber",
+                "min_salary": 59217.65,
+                "max_salary": 98125.57,
+                "median_salary": 75972.45,
+                "min_base_salary": 52050.39,
+                "max_base_salary": 84746.68,
+                "median_base_salary": 66416.1,
+                "min_additional_pay": 7167.26,
+                "max_additional_pay": 13378.89,
+                "median_additional_pay": 9556.35,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 3440,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Plumber&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Auto Mechanic": {
+        "status": "OK",
+        "request_id": "4724b7cb-65e9-4f56-a54e-e98ca118a4b2",
+        "parameters": {
+            "job_title": "auto mechanic",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Auto Mechanic",
+                "min_salary": 55865.31,
+                "max_salary": 84194.86,
+                "median_salary": 68289.37,
+                "min_base_salary": 48887.37,
+                "max_base_salary": 71169.37,
+                "median_base_salary": 58985.45,
+                "min_additional_pay": 6977.94,
+                "max_additional_pay": 13025.49,
+                "median_additional_pay": 9303.92,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 259,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Auto%20Mechanic&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Industrial Designer": {
+        "status": "OK",
+        "request_id": "4ae0b727-f3d5-4a92-803a-96c4ef07a8cd",
+        "parameters": {
+            "job_title": "industrial designer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Industrial Designer",
+                "min_salary": 82657.74,
+                "max_salary": 136012.71,
+                "median_salary": 105516.14,
+                "min_base_salary": 68465.01,
+                "max_base_salary": 109519.61,
+                "median_base_salary": 86592.5,
+                "min_additional_pay": 14192.73,
+                "max_additional_pay": 26493.1,
+                "median_additional_pay": 18923.64,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 4500,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Industrial%20Designer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Construction Project Manager": {
+        "status": "OK",
+        "request_id": "bc27b30a-6dbc-435d-9d98-60dd175d8a7a",
+        "parameters": {
+            "job_title": "construction project manager",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Construction Project Manager",
+                "min_salary": 103058.77,
+                "max_salary": 164439.23,
+                "median_salary": 129407.14,
+                "min_base_salary": 82855.89,
+                "max_base_salary": 126727.18,
+                "median_base_salary": 102469.96,
+                "min_additional_pay": 20202.88,
+                "max_additional_pay": 37712.05,
+                "median_additional_pay": 26937.18,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 4026,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Construction%20Project%20Manager&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Carpenter": {
+        "status": "OK",
+        "request_id": "445d227f-b81f-4c9b-a4b1-d6071796214c",
+        "parameters": {
+            "job_title": "carpenter",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Carpenter",
+                "min_salary": 55264.8,
+                "max_salary": 91194.04,
+                "median_salary": 70743.46,
+                "min_base_salary": 48354.7,
+                "max_base_salary": 78295.18,
+                "median_base_salary": 61529.99,
+                "min_additional_pay": 6910.1,
+                "max_additional_pay": 12898.86,
+                "median_additional_pay": 9213.47,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 5339,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Carpenter&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Welder": {
+        "status": "OK",
+        "request_id": "d787c8b9-c865-46ae-bc08-80469fe29815",
+        "parameters": {
+            "job_title": "welder",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Welder",
+                "min_salary": 51557.71,
+                "max_salary": 73841.04,
+                "median_salary": 61457.31,
+                "min_base_salary": 46308.48,
+                "max_base_salary": 64042.47,
+                "median_base_salary": 54458.33,
+                "min_additional_pay": 5249.23,
+                "max_additional_pay": 9798.57,
+                "median_additional_pay": 6998.98,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 8794,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Welder&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Tool and Die Maker": {
+        "status": "OK",
+        "request_id": "93e3322a-720a-4710-9b7c-7219df94fe5d",
+        "parameters": {
+            "job_title": "tool and die maker",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Tool And Die Maker",
+                "min_salary": 60819.04,
+                "max_salary": 96758.92,
+                "median_salary": 76461.24,
+                "min_base_salary": 54189.58,
+                "max_base_salary": 84383.93,
+                "median_base_salary": 67621.96,
+                "min_additional_pay": 6629.46,
+                "max_additional_pay": 12374.99,
+                "median_additional_pay": 8839.28,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 734,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Tool%20And%20Die%20Maker&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Journalist": {
+        "status": "OK",
+        "request_id": "9b21c6fa-4483-48c7-8631-8916fab29072",
+        "parameters": {
+            "job_title": "journalist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Journalist",
+                "min_salary": 60948.4825,
+                "max_salary": 112194.28,
+                "median_salary": 81264.64,
+                "min_base_salary": 49873.2225,
+                "max_base_salary": 91520.47,
+                "median_base_salary": 66497.63,
+                "min_additional_pay": 11075.26,
+                "max_additional_pay": 20673.81,
+                "median_additional_pay": 14767.01,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1441,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Journalist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Technical Writer": {
+        "status": "OK",
+        "request_id": "28af05df-47ad-4538-89a5-fb625258cf2f",
+        "parameters": {
+            "job_title": "technical writer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Technical Writer",
+                "min_salary": 69290.44,
+                "max_salary": 117223.39,
+                "median_salary": 89898.93,
+                "min_base_salary": 62795.58,
+                "max_base_salary": 105099.66,
+                "median_base_salary": 81239.12,
+                "min_additional_pay": 6494.86,
+                "max_additional_pay": 12123.73,
+                "median_additional_pay": 8659.81,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 11068,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Technical%20Writer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Public Relations Specialist": {
+        "status": "OK",
+        "request_id": "dc35431a-23f0-4d29-883d-8515fc335ae8",
+        "parameters": {
+            "job_title": "public relations specialist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Public Relations Specialist",
+                "min_salary": 48491.1,
+                "max_salary": 82440.87,
+                "median_salary": 63116.53,
+                "min_base_salary": 45292.84,
+                "max_base_salary": 76470.78,
+                "median_base_salary": 58852.18,
+                "min_additional_pay": 3198.26,
+                "max_additional_pay": 5970.09,
+                "median_additional_pay": 4264.35,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 2631,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Public%20Relations%20Specialist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Content Strategist": {
+        "status": "OK",
+        "request_id": "f5560072-c780-45b3-aabf-b5761a40c262",
+        "parameters": {
+            "job_title": "content strategist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Content Strategist",
+                "min_salary": 73015.21,
+                "max_salary": 121669.33,
+                "median_salary": 93967.52,
+                "min_base_salary": 64942.8,
+                "max_base_salary": 106600.84,
+                "median_base_salary": 83204.31,
+                "min_additional_pay": 8072.41,
+                "max_additional_pay": 15068.49,
+                "median_additional_pay": 10763.21,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 2755,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Content%20Strategist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Social Media Manager": {
+        "status": "OK",
+        "request_id": "266782f3-8cd0-48fc-8836-f1b741a5d9bf",
+        "parameters": {
+            "job_title": "social media manager",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Social Media Manager",
+                "min_salary": 45869.835,
+                "max_salary": 82128.18,
+                "median_salary": 61159.78,
+                "min_base_salary": 42153.945,
+                "max_base_salary": 75191.85,
+                "median_base_salary": 56205.26,
+                "min_additional_pay": 3715.89,
+                "max_additional_pay": 6936.33,
+                "median_additional_pay": 4954.52,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 11505,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Social%20Media%20Manager&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "SEO Specialist": {
+        "status": "OK",
+        "request_id": "c29d584c-44b4-414e-87d7-375e53508249",
+        "parameters": {
+            "job_title": "seo specialist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "SEO Specialist",
+                "min_salary": 53407.0425,
+                "max_salary": 96830.41,
+                "median_salary": 71209.39,
+                "min_base_salary": 49243.162500000006,
+                "max_base_salary": 89057.83,
+                "median_base_salary": 65657.55,
+                "min_additional_pay": 4163.88,
+                "max_additional_pay": 7772.58,
+                "median_additional_pay": 5551.84,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 3142,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=SEO%20Specialist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Copywriter": {
+        "status": "OK",
+        "request_id": "c21b66e7-380b-4eb8-97d9-987bfd209346",
+        "parameters": {
+            "job_title": "copywriter",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Copywriter",
+                "min_salary": 60257.21,
+                "max_salary": 99917.32,
+                "median_salary": 77498.33,
+                "min_base_salary": 57574.12,
+                "max_base_salary": 94908.89,
+                "median_base_salary": 73920.88,
+                "min_additional_pay": 2683.09,
+                "max_additional_pay": 5008.43,
+                "median_additional_pay": 3577.45,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 11362,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Copywriter&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Broadcast Producer": {
+        "status": "OK",
+        "request_id": "17c84810-4c49-448f-83ad-56a57c6f17ed",
+        "parameters": {
+            "job_title": "broadcast producer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Broadcast Producer",
+                "min_salary": 91668.12,
+                "max_salary": 166028,
+                "median_salary": 122224.16,
+                "min_base_salary": 73164.15,
+                "max_base_salary": 131487.26,
+                "median_base_salary": 97552.2,
+                "min_additional_pay": 18503.97,
+                "max_additional_pay": 34540.74,
+                "median_additional_pay": 24671.96,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 102,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Broadcast%20Producer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Event Coordinator": {
+        "status": "OK",
+        "request_id": "2ae295d4-37ed-4b50-931a-81221cd6e60a",
+        "parameters": {
+            "job_title": "event coordinator",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Event Coordinator",
+                "min_salary": 49258.38,
+                "max_salary": 78028.2,
+                "median_salary": 61846.22,
+                "min_base_salary": 45305.83,
+                "max_base_salary": 70650.1,
+                "median_base_salary": 56576.15,
+                "min_additional_pay": 3952.55,
+                "max_additional_pay": 7378.1,
+                "median_additional_pay": 5270.07,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 7554,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Event%20Coordinator&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Podcast Producer": {
+        "status": "OK",
+        "request_id": "a49e66e0-39ee-4beb-bd2d-4629ca70edfe",
+        "parameters": {
+            "job_title": "podcast producer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Podcast Producer",
+                "min_salary": 61711.395,
+                "max_salary": 111550.79,
+                "median_salary": 82281.86,
+                "min_base_salary": 56018.745,
+                "max_base_salary": 100924.51,
+                "median_base_salary": 74691.66,
+                "min_additional_pay": 5692.65,
+                "max_additional_pay": 10626.28,
+                "median_additional_pay": 7590.2,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 212,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Podcast%20Producer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Elementary School Teacher": {
+        "status": "OK",
+        "request_id": "6d52e4a5-e713-4d55-b8ed-1f34c96d552a",
+        "parameters": {
+            "job_title": "elementary school teacher",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Bilingual Elementary School Teacher",
+                "min_salary": 66303.18,
+                "max_salary": 101161.97,
+                "median_salary": 81594.49,
+                "min_base_salary": 58864.67,
+                "max_base_salary": 87276.74,
+                "median_base_salary": 71676.47,
+                "min_additional_pay": 7438.51,
+                "max_additional_pay": 13885.23,
+                "median_additional_pay": 9918.02,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 986,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Bilingual%20Elementary%20School%20Teacher&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "College Professor": {
+        "status": "OK",
+        "request_id": "2f7fdffc-af81-4421-9234-2086fbda7d1c",
+        "parameters": {
+            "job_title": "college professor",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "College Professor",
+                "min_salary": 69886.7725,
+                "max_salary": 128480.43,
+                "median_salary": 93182.37,
+                "min_base_salary": 56711.4225,
+                "max_base_salary": 103886.43,
+                "median_base_salary": 75615.23,
+                "min_additional_pay": 13175.35,
+                "max_additional_pay": 24594,
+                "median_additional_pay": 17567.14,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 106,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=College%20Professor&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Curriculum Developer": {
+        "status": "OK",
+        "request_id": "2ca51dd3-c553-425d-9b37-d72dbe489836",
+        "parameters": {
+            "job_title": "curriculum developer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Curriculum Developer",
+                "min_salary": 63394.79,
+                "max_salary": 108772.51,
+                "median_salary": 82779.31,
+                "min_base_salary": 55802.97,
+                "max_base_salary": 94601.11,
+                "median_base_salary": 72656.88,
+                "min_additional_pay": 7591.82,
+                "max_additional_pay": 14171.4,
+                "median_additional_pay": 10122.43,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1010,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Curriculum%20Developer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Instructional Designer": {
+        "status": "OK",
+        "request_id": "089f8693-e00d-4b89-8475-01c190c24ca1",
+        "parameters": {
+            "job_title": "instructional designer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Instructional Designer",
+                "min_salary": 75373.05,
+                "max_salary": 113576.09,
+                "median_salary": 92207.76,
+                "min_base_salary": 67813.77,
+                "max_base_salary": 99465.43,
+                "median_base_salary": 82128.72,
+                "min_additional_pay": 7559.28,
+                "max_additional_pay": 14110.66,
+                "median_additional_pay": 10079.04,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 10274,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Instructional%20Designer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Education Consultant": {
+        "status": "OK",
+        "request_id": "18d9252b-eff5-48d8-a1eb-6602f880f506",
+        "parameters": {
+            "job_title": "education consultant",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Education Consultant",
+                "min_salary": 72183.8,
+                "max_salary": 120027.98,
+                "median_salary": 92426.35,
+                "min_base_salary": 54020.4,
+                "max_base_salary": 86122.96,
+                "median_base_salary": 68208.48,
+                "min_additional_pay": 18163.4,
+                "max_additional_pay": 33905.02,
+                "median_additional_pay": 24217.87,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 1112,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Education%20Consultant&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Academic Advisor": {
+        "status": "OK",
+        "request_id": "8cb64f6b-5a22-4c38-ba81-5d6f91ab93c1",
+        "parameters": {
+            "job_title": "academic advisor",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Academic Advisor",
+                "min_salary": 50905.27,
+                "max_salary": 75547.64,
+                "median_salary": 61721.66,
+                "min_base_salary": 44176.98,
+                "max_base_salary": 62988.17,
+                "median_base_salary": 52750.61,
+                "min_additional_pay": 6728.29,
+                "max_additional_pay": 12559.47,
+                "median_additional_pay": 8971.05,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 8261,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Academic%20Advisor&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Special Education Teacher": {
+        "status": "OK",
+        "request_id": "55c07100-ab95-4f82-92f6-b9bfb6574713",
+        "parameters": {
+            "job_title": "special education teacher",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Special Education Teacher",
+                "min_salary": 63331.96,
+                "max_salary": 91456.73,
+                "median_salary": 75975.02,
+                "min_base_salary": 60408.22,
+                "max_base_salary": 85999.08,
+                "median_base_salary": 72076.7,
+                "min_additional_pay": 2923.74,
+                "max_additional_pay": 5457.65,
+                "median_additional_pay": 3898.32,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 22953,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Special%20Education%20Teacher&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Research Scientist": {
+        "status": "OK",
+        "request_id": "e9233185-9c78-46d4-a21a-0962c61c5ced",
+        "parameters": {
+            "job_title": "research scientist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Research Scientist",
+                "min_salary": 116909.68,
+                "max_salary": 199964.52,
+                "median_salary": 151948,
+                "min_base_salary": 89498.1,
+                "max_base_salary": 148796.23,
+                "median_base_salary": 115399.22,
+                "min_additional_pay": 27411.58,
+                "max_additional_pay": 51168.29,
+                "median_additional_pay": 36548.78,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 31822,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Research%20Scientist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Librarian": {
+        "status": "OK",
+        "request_id": "ef7d4ba6-96ac-412c-916b-49a8550f0550",
+        "parameters": {
+            "job_title": "librarian",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Librarian",
+                "min_salary": 55162.03,
+                "max_salary": 94154.46,
+                "median_salary": 71798.19,
+                "min_base_salary": 47357.73,
+                "max_base_salary": 79586.42,
+                "median_base_salary": 61392.45,
+                "min_additional_pay": 7804.3,
+                "max_additional_pay": 14568.04,
+                "median_additional_pay": 10405.74,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 6363,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Librarian&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Educational Technologist": {
+        "status": "OK",
+        "request_id": "3ed08748-d067-4ce2-9309-ef0dfd7fa5d1",
+        "parameters": {
+            "job_title": "educational technologist",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Educational Technologist",
+                "min_salary": 54636.38,
+                "max_salary": 88105.39,
+                "median_salary": 69155.17,
+                "min_base_salary": 48539.8,
+                "max_base_salary": 76725.11,
+                "median_base_salary": 61026.4,
+                "min_additional_pay": 6096.58,
+                "max_additional_pay": 11380.28,
+                "median_additional_pay": 8128.77,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 163,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Educational%20Technologist&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Corporate Lawyer": {
+        "status": "OK",
+        "request_id": "b1785e94-f34a-47ce-8c5d-33af8a142650",
+        "parameters": {
+            "job_title": "corporate lawyer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Corporate Lawyer",
+                "min_salary": 197290.2375,
+                "max_salary": 364834.87,
+                "median_salary": 263053.65,
+                "min_base_salary": 109918.6275,
+                "max_base_salary": 201741.2,
+                "median_base_salary": 146558.17,
+                "min_additional_pay": 87371.61,
+                "max_additional_pay": 163093.67,
+                "median_additional_pay": 116495.48,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 115,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Corporate%20Lawyer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Paralegal": {
+        "status": "OK",
+        "request_id": "be8eef73-0c21-47f0-bcc8-3726577d69b8",
+        "parameters": {
+            "job_title": "paralegal",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Paralegal",
+                "min_salary": 55700.06,
+                "max_salary": 86809.06,
+                "median_salary": 69264.71,
+                "min_base_salary": 48805.45,
+                "max_base_salary": 73939.13,
+                "median_base_salary": 60071.9,
+                "min_additional_pay": 6894.61,
+                "max_additional_pay": 12869.93,
+                "median_additional_pay": 9192.81,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 35548,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Paralegal&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Intellectual Property Attorney": {
+        "status": "OK",
+        "request_id": "3b8fc9a7-5921-46c3-8141-8159b301a5cf",
+        "parameters": {
+            "job_title": "intellectual property attorney",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Intellectual Property Attorney",
+                "min_salary": 133273.78,
+                "max_salary": 232995.68,
+                "median_salary": 174634.48,
+                "min_base_salary": 86847.13,
+                "max_base_salary": 146332.6,
+                "median_base_salary": 112732.28,
+                "min_additional_pay": 46426.65,
+                "max_additional_pay": 86663.08,
+                "median_additional_pay": 61902.2,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 56,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Intellectual%20Property%20Attorney&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Compliance Officer": {
+        "status": "OK",
+        "request_id": "1b74c958-9a04-4e47-9ac5-0493e4b92f8f",
+        "parameters": {
+            "job_title": "compliance officer",
+            "location": "united states",
+            "location_type": "ANY",
+            "years_of_experience": null
+        },
+        "data": [
+            {
+                "location": "United States",
+                "job_title": "Compliance Officer",
+                "min_salary": 117331.39,
+                "max_salary": 215636.1,
+                "median_salary": 156441.85,
+                "min_base_salary": 83690.16,
+                "max_base_salary": 152839.14,
+                "median_base_salary": 111586.88,
+                "min_additional_pay": 33641.23,
+                "max_additional_pay": 62796.96,
+                "median_additional_pay": 44854.97,
+                "salary_period": "YEAR",
+                "salary_currency": "USD",
+                "salary_count": 4210,
+                "salaries_updated_at": "2024-06-06T23:59:59.000Z",
+                "publisher_name": "Glassdoor",
+                "publisher_link": "https://www.glassdoor.com/Salaries/company-salaries.htm?suggestCount=0&suggestChosen=false&sc.keyword=Compliance%20Officer&locT=N&locId=1",
+                "confidence": "CONFIDENT"
+            }
+        ]
+    },
+    "Contract Manager": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Data Privacy Specialist": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Immigration Attorney": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Legal Consultant": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Criminal Defense Attorney": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Employment Law Specialist": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Quantum Computing Researcher": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "AI Ethics Consultant": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Space Systems Engineer": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Blockchain Developer": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Virtual Reality Developer": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Renewable Energy Engineer": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Smart Cities Consultant": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Genetic Data Analyst": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Cyber-Physical Systems Engineer": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    },
+    "Digital Twin Architect": {
+        "message": "You have exceeded the MONTHLY quota for Requests on your current plan, BASIC. Upgrade your plan at https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch"
+    }
+}
