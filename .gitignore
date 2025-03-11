@@ -51,4 +51,4 @@ NeuralNetwork/data/processed_skills.csv
 NeuralNetwork/data/linkedin_skills.txt
 
 # Models might be too big
-NeuralNetwork/models
+#NeuralNetwork/models
