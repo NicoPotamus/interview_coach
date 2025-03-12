@@ -10,4 +10,8 @@ COPY . .
 
 EXPOSE 5000
 
-CMD [ "python", "./index.py" ]
+ENTRYPOINT ["python", "index.py"]
+CMD ["--filepath", "/app/output.txt"]
+
+# try 
+# docker run -p 5000:5000 -v C:/Users/NicoD/Downloads:/app/output scraper-server-ic --filepath /app/output/output.txt

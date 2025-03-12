@@ -1,6 +1,6 @@
 
 import re
-from scraper import search_jobs
+from .scraper import search_jobs
 
 
 job_titles = [
@@ -55,10 +55,11 @@ def get_training_data():
     allJobs = []
     sentence_pattern = re.compile(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s')
     individual_sentences = []
+    allJobs = search_jobs("Software Engineer", "USA")
     #get all jobs for each posting
-    for jobT in job_titles:
-        jobJSON = search_jobs(jobT, "USA")
-        allJobs.extend(jobJSON)
+    # for jobT in job_titles:
+    #     jobJSON = search_jobs(jobT, "USA")
+    #     allJobs.extend(jobJSON)
     # separate sentences
     for job in allJobs:
         description = job.get('description')
@@ -66,14 +67,14 @@ def get_training_data():
         individual_sentences.extend(sentences)
     return individual_sentences
 
-def main():
-    results = get_training_data()
-    print(results)
-    print(len(results), "sentences")
-    return
+# def main():
+#     results = get_training_data()
+#     print(results)
+#     print(len(results), "sentences")
+#     return
     
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
         
         

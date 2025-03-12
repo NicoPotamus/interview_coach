@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import re
 
 from .ipRotator import assemble_ip_string  # Use relative import
 
@@ -56,10 +57,12 @@ def scrape_job(job_url):
     
     
     # now we gotta play with the criteria to get that information nicely
+    
     description_element = soup.select_one(".description__text .show-more-less-html")
     description= ""
     if description_element:
         description = description_element.get_text(separator=" ").replace('\n', ' ').strip()
+        description = re.sub(r'[^\x00-\x7F]+','', description)
     else:
         description = "No description found."
     
@@ -91,21 +94,21 @@ def search_jobs(keywords, location):
 
     
 #main function
-def main():
-    #test data extraction from posting GOOD, but the description is a bit messy
-    jsonOut = scrape_job("https://www.linkedin.com/jobs/view/talent-sourcer-business-recruiter-at-nextdoor-4175126786?position=1&pageNum=0&refId=tN0PAUlrGxG3XCfYSe9HVQ%3D%3D&trackingId=rwSmpNpOvpiTlpyEr7%2FhFw%3D%3D")
-    print("loading")
-    #print(jsonOut)
+# def main():
+#     #test data extraction from posting GOOD, but the description is a bit messy
+#     jsonOut = scrape_job("https://www.linkedin.com/jobs/view/talent-sourcer-business-recruiter-at-nextdoor-4175126786?position=1&pageNum=0&refId=tN0PAUlrGxG3XCfYSe9HVQ%3D%3D&trackingId=rwSmpNpOvpiTlpyEr7%2FhFw%3D%3D")
+#     print("loading")
+#     #print(jsonOut)
     
-    # test url aggregation GOOD
-    job_urls = retrieve_job_urls("https://www.linkedin.com/jobs/search?keywords=Software%20Engineer&location=USA&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0")
-    #print(job_urls)
+#     # test url aggregation GOOD
+#     job_urls = retrieve_job_urls("https://www.linkedin.com/jobs/search?keywords=Software%20Engineer&location=USA&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0")
+#     #print(job_urls)
     
-    # test url factory
-    jobs = search_jobs("Cyber security", "USA")
-    print(jobs)
+#     # test url factory
+#     jobs = search_jobs("Cyber security", "USA")
+#     print(jobs)
     
     
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()

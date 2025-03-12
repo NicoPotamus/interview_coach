@@ -2,8 +2,7 @@
 
 server/model/scraper/venv
 
-./ml/skills_ner_model
-
+/NeuralNetwork/env
 /myenv
 
 # dependencies
