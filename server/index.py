@@ -2,12 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS
 from model.scraper.scraper import search_jobs
 from model.scraper.getTrainingData import get_training_data
-import argparse
 
-# Parse command-line arguments
-parser = argparse.ArgumentParser(description='Run the Flask app with a specified file path.')
-parser.add_argument('--filepath', type=str, required=True, help='The file path to save training data')
-args = parser.parse_args()
 
 app = Flask(__name__)
 CORS(app)
@@ -23,13 +18,8 @@ def scrape_web():
 #http://127.0.0.1:5000/api/v1/gendata
 @app.route('/api/v1/gendata', methods=['GET'])
 def gen_data():
-    file_path = args.filepath
     t_data = get_training_data()
-    with open(file_path, 'w') as file:
-        # Write content to the file
-        for sentence in t_data:
-            file.write(sentence)
     return t_data
 
 if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=5000)
+   app.run(host="0.0.0.0", port=5000, debug=True)
