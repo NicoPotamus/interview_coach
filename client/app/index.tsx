@@ -38,12 +38,20 @@ export default function Index() {
           always wanted by identifying the skills the job market is looking for
           for your desired role.
         </Banner>
-        <TextInput
-          label="Job Title"
-          value={text}
-          onChangeText={(text) => setText(text)}
-          className="mb-4"
-        />
+        <View>
+          <TextInput
+            label="Job Title"
+            value={text}
+            onChangeText={(text) => setText(text)}
+            className="mb-4"
+          />
+          <TextInput
+            label="Location"
+            value={text}
+            onChangeText={(text) => setText(text)}
+            className="mb-4"
+          />
+        </View>
         <View className="items-center">
           <View className="mt-4 w-1/2">
             <Button

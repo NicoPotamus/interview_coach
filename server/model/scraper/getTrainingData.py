@@ -55,10 +55,26 @@ def get_training_data():
     allJobs = []
     sentence_pattern = re.compile(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s')
     individual_sentences = []
+    
     #get all jobs for each posting
     for jobT in job_titles:
         jobJSON = search_jobs(jobT, "USA")
         allJobs.extend(jobJSON)
+        
+    # separate sentences
+    for job in allJobs:
+        description = job.get('description')
+        sentences = sentence_pattern.split(description)
+        individual_sentences.extend(sentences)
+    return individual_sentences
+
+
+def get_training_data_sm():
+    allJobs = []
+    sentence_pattern = re.compile(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s')
+    individual_sentences = []
+    
+    allJobs = search_jobs("nurse", "USA")
     # separate sentences
     for job in allJobs:
         description = job.get('description')

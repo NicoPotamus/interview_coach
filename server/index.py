@@ -1,7 +1,8 @@
 from flask import Flask, request
 from flask_cors import CORS
 from model.scraper.scraper import search_jobs
-from model.scraper.getTrainingData import get_training_data
+from model.scraper.getTrainingData import get_training_data, get_training_data_sm
+import json
 
 
 app = Flask(__name__)
@@ -18,7 +19,10 @@ def scrape_web():
 #http://127.0.0.1:5000/api/v1/gendata
 @app.route('/api/v1/gendata', methods=['GET'])
 def gen_data():
-    t_data = get_training_data()
+    t_data = get_training_data_sm()
+    with open('./output/output.json' , 'w') as f:
+        json.dump(t_data, f)
+        
     return t_data
 
 if __name__ == '__main__':
