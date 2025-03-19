@@ -9,8 +9,12 @@ import { Fragment } from "react";
 
 export default function Index() {
   const [visible, setVisible] = React.useState(true);//Banner
-  const [text, setText] = React.useState("");//Search bar
+  const [jobTitle, setJobTitle] = React.useState("");//Search bar
+  const [jobLocation, setJobLocation] = React.useState("");//Search bar
 
+  const searchButtonPressed = () => {
+    console.log(`Job Title: ${jobTitle}, Job Location: ${jobLocation}`);
+  }
   return (
     <Fragment>
       <View className="flex-1 justify-center">
@@ -38,26 +42,28 @@ export default function Index() {
           always wanted by identifying the skills the job market is looking for
           for your desired role.
         </Banner>
-        <View>
-          <TextInput
-            label="Job Title"
-            value={text}
-            onChangeText={(text) => setText(text)}
-            className="mb-4"
-          />
+        <View className="flex flex-row justify-center">
+          <View className="basis-3/4 mr-4">
+            <TextInput
+              label="Job Title"
+              value={jobTitle}
+              onChangeText={(jobTitle) => setJobTitle(jobTitle)}
+              className="mb-4"
+            />
+          </View>
           <TextInput
             label="Location"
-            value={text}
-            onChangeText={(text) => setText(text)}
+            value={jobLocation}
+            onChangeText={(jobLocation) => setJobLocation(jobLocation)}
             className="mb-4"
           />
         </View>
         <View className="items-center">
-          <View className="mt-4 w-1/2">
+          <View className="mt-4 basis-15">
             <Button
               icon="database-search"
               mode="contained"
-              onPress={() => console.log("button pressed")}
+              onPress={searchButtonPressed}
             >
               Search Skills
             </Button>
