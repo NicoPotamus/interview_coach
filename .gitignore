@@ -51,3 +51,5 @@ next-env.d.ts
 
 # Models might be too big
 #NeuralNetwork/models
+
+/NeuralNetwork/env
