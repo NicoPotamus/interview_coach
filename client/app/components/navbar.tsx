@@ -1,11 +1,10 @@
 import * as React from 'react';
-import { BottomNavigation, Text } from 'react-native-paper';
+import { BottomNavigation } from 'react-native-paper';
+import HomePage from './HomePage'; // Import the HomePage component
 
-const HomeRoute = () => <Text>Home</Text>;
-
-const OtherRoute = () => <Text>Other</Text>;
-
-const SettingsRoute = () => <Text>Settings</Text>;
+const HomeRoute = () => <HomePage />;
+const OtherRoute = () => null;
+const SettingsRoute = () => null;
 
 const MyComponent = () => {
   const [index, setIndex] = React.useState(0);
