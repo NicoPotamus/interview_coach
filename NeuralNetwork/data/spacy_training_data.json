@@ -1,0 +1,26 @@
+[
+    [
+        "About Us: We're on a mission to make it possible for every person, team, and company to be able to tailor their software to solve any problem and take on any challenge.",
+        {
+            "entities": [
+                [
+                    112,
+                    120,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "Computers may be our most powerful tools, but most of us can't build or modify the software we use on them every day.",
+        {
+            "entities": [
+                [
+                    83,
+                    91,
+                    "SKILL"
+                ]
+            ]
+        }
+    ]
+]

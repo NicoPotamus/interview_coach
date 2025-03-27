@@ -1,0 +1,12 @@
+FROM python:3
+
+# Set the working directory
+WORKDIR /NeuralNetwork
+
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+# Allow passing arguments correctly
+ENTRYPOINT ["python", "training/training_pipe.py"]
