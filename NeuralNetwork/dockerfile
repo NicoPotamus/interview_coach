@@ -30,5 +30,12 @@ RUN ./env/bin/pip install --no-cache-dir -r requirements.txt
 COPY data ./data
 COPY . .
 
+ENV SCRIPT_NAME=training/training_pipe.py
+
+
 # Set the entry point
-ENTRYPOINT ["./env/bin/python", "training/training_pipe.py"]
+ENTRYPOINT ["sh", "-c", "./env/bin/python $SCRIPT_NAME"]
+
+#RUN CMD
+# docker run -e SCRIPT_NAME=ScriptNameFromRoot -v C:folder/in/host:/folder/in/project model-data-maker  
+# docker run -e SCRIPT_NAME=training/train_spacy_ner.py -v C:\Users\NicoD\OneDrive\Desktop\temp:/NeuralNetwork/output_data model-data-maker  
