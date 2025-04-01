@@ -28,7 +28,7 @@ matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
 
 
 # Load skills from a linkedin skills file
-skill_file = "./data/linkedin_skills.txt"
+skill_file = os.path.abspath("./data/linkedin_skills.txt")
 
 with open(skill_file, "r", encoding="utf-8") as f:
     skill_list = [line.strip() for line in f.readlines() if line.strip()]
@@ -70,7 +70,9 @@ def generate_training_data(sentence_templates):
         # Ensure uniqueness to prevent duplicate patterns
         if sentence in used_sentences:
             continue
-        if sentence.contains("Show more") | sentence.contains("No description found"):
+        if "Show more" in sentence :
+            continue
+        if "No description found" in sentence:
             continue
         
         used_sentences.add(sentence)
@@ -103,7 +105,7 @@ training_data = generate_training_data(training_data)
 
 
 # Save labeled data in spaCy format
-output_file = "./data/spacy_training_data.json"
+output_file = "./output_data/spacy_training_data.json"
 with open(output_file, "w") as f:
     json.dump(training_data, f, indent=4)
 
