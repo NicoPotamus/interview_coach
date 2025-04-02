@@ -119,7 +119,9 @@ def generate_training_data(sentence_templates):
                 elif (start_char > span.start_char and end_char < span.end_char):
                     matched_entities.remove(ent)
                 else:
-                    matched_entities.append((span.start_char, span.end_char, "SKILL"))
+                    continue
+                
+            matched_entities.append((span.start_char, span.end_char, "SKILL"))
             
         if(matched_entities != []):
             training_data.append((sentence, {"entities": matched_entities}))
