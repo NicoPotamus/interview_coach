@@ -80,19 +80,32 @@ matcher.add("SKILL", skill_patterns)
 
 def filter_overlap(entities):
     """
-    Filters out overlaps from the list of entities.
-    offset
+    Filters out overlapping entities from the list.
+    Deletes the smaller span if it has the same start_char or end_char as another span.
     """
+    filtered_entities = []
+
     for ent1 in entities:
         start_char1, end_char1, label1 = ent1
-        for ent2 in entities:
-            start_char2, end_char2, label2 = ent2
-            if start_char1 == start_char2 or end_char1 == end_char2:
-                if (end_char1 - start_char1) > (end_char2 - start_char2):
-                    entities.remove(ent2)
-                else:
-                    entities.remove(ent1)
+        should_add = True  # Flag to determine if ent1 should be added
 
+        for ent2 in entities:
+            if ent1 == ent2:
+                continue  # Skip comparing the same entity
+
+            start_char2, end_char2, label2 = ent2
+
+            # Check if the spans share the same start_char or end_char
+            if start_char1 == start_char2 or end_char1 == end_char2:
+                # Keep the larger span
+                if (end_char1 - start_char1) < (end_char2 - start_char2):
+                    should_add = False  # Do not add ent1 if ent2 is larger
+                    break
+
+        if should_add:
+            filtered_entities.append(ent1)
+
+    return filtered_entities
 def generate_training_data(sentence_templates):
     """Generates labeled training data for spaCy's NER model"""
     training_data = []
