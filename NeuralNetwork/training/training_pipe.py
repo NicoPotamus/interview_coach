@@ -78,6 +78,20 @@ matcher.add("SKILL", skill_patterns)
 
 # In[ ]:
 
+def filter_overlap(entities):
+    """
+    Filters out overlaps from the list of entities.
+    offset
+    """
+    for ent1 in entities:
+        start_char1, end_char1, label1 = ent1
+        for ent2 in entities:
+            start_char2, end_char2, label2 = ent2
+            if start_char1 == start_char2 or end_char1 == end_char2:
+                if (end_char1 - start_char1) > (end_char2 - start_char2):
+                    entities.remove(ent2)
+                else:
+                    entities.remove(ent1)
 
 def generate_training_data(sentence_templates):
     """Generates labeled training data for spaCy's NER model"""
@@ -104,25 +118,10 @@ def generate_training_data(sentence_templates):
         matched_entities = []
         for match_id, start, end in matches:
             span = doc[start:end]
-            
-            
-            # TODO: Replace OVERLAPS with larger span
-            for ent in matched_entities:
-                start_char, end_char, label = ent
-                # Check if the current span overlaps with any existing entity
-                if (start_char < span.start_char and span.start_char > end_char) or (start_char < span.end_char and span.end_char > end_char):
-                    if end_char - start_char < span.end_char - span.start_char: 
-                        matched_entities.remove(ent)
-                    else: 
-                        continue
-                # check if the current span is wrapping an existing entity
-                elif (start_char > span.start_char and end_char < span.end_char):
-                    matched_entities.remove(ent)
-                else:
-                    continue
-                
+           
             matched_entities.append((span.start_char, span.end_char, "SKILL"))
-            
+        
+        matched_entities = filter_overlap(matched_entities)
         if(matched_entities != []):
             training_data.append((sentence, {"entities": matched_entities}))
 
