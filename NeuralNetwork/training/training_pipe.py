@@ -101,7 +101,20 @@ def filter_overlap(entities):
                 if (end_char1 - start_char1) < (end_char2 - start_char2):
                     should_add = False  # Do not add ent1 if ent2 is larger
                     break
-
+            
+            # check for overlap w/out matching chars
+            if start_char1 < start_char2 and end_char1 < start_char2:
+                if (end_char1 - start_char1) < (end_char2 - start_char2):
+                    should_add = False  # Do not add ent1 if ent2 is larger
+                    break
+            if start_char1 > start_char2 and end_char1 > start_char2:
+                if (end_char1 - start_char1) < (end_char2 - start_char2):
+                    should_add = False  # Do not add ent1 if ent2 is larger
+                    break
+            # Check if the spans wraps another
+            if start_char1 >= start_char2 and end_char1 <= end_char2:
+                should_add = False
+                break
         if should_add:
             filtered_entities.append(ent1)
 
