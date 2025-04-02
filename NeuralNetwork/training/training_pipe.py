@@ -112,19 +112,14 @@ def generate_training_data(sentence_templates):
                 # Check if the current span overlaps with any existing entity
                 if (start_char < span.start_char and span.start_char > end_char) or (start_char < span.end_char and span.end_char > end_char):
                     if end_char - start_char < span.end_char - span.start_char: 
-                        matched_entities.append((span.start_char, span.end_char, "SKILL"))
                         matched_entities.remove(ent)
                     else: 
                         continue
                 # check if the current span is wrapping an existing entity
                 elif (start_char > span.start_char and end_char < span.end_char):
-                    matched_entities.append((span.start_char, span.end_char, "SKILL"))
                     matched_entities.remove(ent)
-                # check if current span is already in matched_entities
-                elif (not matched_entities.__contains__((span.start_char, span.end_char, "SKILL"))):
-                    matched_entities.append((span.start_char, span.end_char, "SKILL"))
                 else:
-                    continue
+                    matched_entities.append((span.start_char, span.end_char, "SKILL"))
             
         if(matched_entities != []):
             training_data.append((sentence, {"entities": matched_entities}))
