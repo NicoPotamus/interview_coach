@@ -48,10 +48,29 @@ with open("./data/gendata.json", "r") as f:
 
 
 # In[ ]:
+# Function to clean skills (Fix HTML entities, handle hyphens, preserve single letters)
+def clean_skill(skill):
+    skill = html.unescape(skill)  # Convert HTML entities (&amp; -> &)
+    skill = skill.replace("\t", " ").strip()  # Remove tabs and extra spaces
+    skill = re.sub(r"\s+", " ", skill)  # Normalize multiple spaces
+
+    # Normalize ampersands to "and"
+    skill = skill.replace("&", "and")  
+
+    # Convert hyphens to spaces for better tokenization
+    skill = skill.replace("-", " ")  
+
+    # Preserve single-letter words (e.g., "v" in "hyper v") by adding "_"
+    skill = re.sub(r"\b([a-zA-Z])\b", r"\1_", skill)  
+
+    # Normalize apostrophes to avoid tokenization errors
+    skill = skill.replace("’", "'")  # Normalize different apostrophe characters
+
+    return skill.lower().strip()  # Convert to lowercase for better matching
 
 
 # Apply filter function
-
+skill_list = [clean_skill(skill) for skill in skill_list]
 # ✅ Use PhraseMatcher to add skills for proper tokenization
 skill_patterns = [nlp.make_doc(skill) for skill in skill_list]
 matcher.add("SKILL", skill_patterns)
@@ -85,13 +104,22 @@ def generate_training_data(sentence_templates):
         matched_entities = []
         for match_id, start, end in matches:
             span = doc[start:end]
-
-            matched_entities.append((span.start_char, span.end_char, "SKILL"))
-
+            
+            
+            # TODO: Replace OVERLAPS with larger span
+            for ent in matched_entities:
+                start_char, end_char, label = ent
+                if (start_car < span.start_char and span.start_char < end_char) or (start_char < span.end_char and span.end_char < end_char):
+                    matched_entities.append((span.start_char, span.end_char, "SKILL"))
+            
+            
+            
+        
+            
         if(matched_entities != []):
             training_data.append((sentence, {"entities": matched_entities}))
 
-    return training_data
+    return filter_spans(training_data)
 
 
 # In[ ]:
