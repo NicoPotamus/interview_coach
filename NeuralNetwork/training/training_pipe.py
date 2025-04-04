@@ -14,6 +14,7 @@ from spacy.matcher import PhraseMatcher
 import os
 import html
 import re
+from spacy.util import filter_spans
 
 # In[ ]:
 
@@ -101,13 +102,13 @@ def filter_overlap(entities):
                 if (end_char1 - start_char1) < (end_char2 - start_char2):
                     should_add = False  # Do not add ent1 if ent2 is larger
                     break
-            
+            # TODO: IF WE ADD ent 1, ent 2 never gets a chance to be left out
             # check for overlap w/out matching chars
-            if start_char1 < start_char2 and end_char1 < start_char2:
+            if (start_char1 < start_char2 and end_char1 < start_char2) :
                 if (end_char1 - start_char1) < (end_char2 - start_char2):
                     should_add = False  # Do not add ent1 if ent2 is larger
                     break
-            if start_char1 > start_char2 and end_char1 > start_char2:
+            if (start_char1 > start_char2 and end_char1 > start_char2):
                 if (end_char1 - start_char1) < (end_char2 - start_char2):
                     should_add = False  # Do not add ent1 if ent2 is larger
                     break
@@ -141,15 +142,18 @@ def generate_training_data(sentence_templates):
 
         # Ensure skills like "hyper v" are matched correctly
         matches = matcher(doc)
-        matched_entities = []
+        doc_spans = []
         for match_id, start, end in matches:
             span = doc[start:end]
            
-            matched_entities.append((span.start_char, span.end_char, "SKILL"))
+            doc_spans.append(span)
         
-        matched_entities = filter_overlap(matched_entities)
-        if(matched_entities != []):
-            training_data.append((sentence, {"entities": matched_entities}))
+        doc_spans = filter_spans(doc_spans)
+        if(doc_spans != []):
+            matched_entities = []
+            for span in doc_spans:
+                matched_entities.append((span.start_char, span.end_char, "SKILL"))
+                training_data.append((sentence, {"entities": matched_entities}))
 
     return (training_data)
 
