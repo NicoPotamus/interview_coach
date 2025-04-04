@@ -120,6 +120,8 @@ def filter_overlap(entities):
             filtered_entities.append(ent1)
 
     return filtered_entities
+
+    
 def generate_training_data(sentence_templates):
     """Generates labeled training data for spaCy's NER model"""
     training_data = []
@@ -153,7 +155,8 @@ def generate_training_data(sentence_templates):
             matched_entities = []
             for span in doc_spans:
                 matched_entities.append((span.start_char, span.end_char, "SKILL"))
-                training_data.append((sentence, {"entities": matched_entities}))
+            
+            training_data.append((sentence, {"entities": matched_entities}))
 
     return (training_data)
 
