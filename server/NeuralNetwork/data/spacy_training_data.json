@@ -1,23 +1,180 @@
 [
     [
+<<<<<<< HEAD:server/NeuralNetwork/data/spacy_training_data.json
         "About Us: We're on a mission to make it possible for every person, team, and company to be able to tailor their software to solve any problem and take on any challenge.",
         {
             "entities": [
                 [
                     112,
                     120,
+=======
+        "We are looking for a backend developer with experience in Java AWT",
+        {
+            "entities": [
+                [
+                    58,
+                    62,
+                    "SKILL"
+                ],
+                [
+                    58,
+                    66,
+                    "SKILL"
+                ],
+                [
+                    63,
+                    66,
+>>>>>>> e0bdf5ea (data creation):NeuralNetwork/data/spacy_training_data.json
                     "SKILL"
                 ]
             ]
         }
     ],
     [
+<<<<<<< HEAD:server/NeuralNetwork/data/spacy_training_data.json
         "Computers may be our most powerful tools, but most of us can't build or modify the software we use on them every day.",
         {
             "entities": [
                 [
                     83,
                     91,
+=======
+        "We are looking for a backend developer with experience in Node.js, MongoDB, and Docker.",
+        {
+            "entities": [
+                [
+                    58,
+                    65,
+                    "SKILL"
+                ],
+                [
+                    67,
+                    74,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "Strong skills in Python and machine learning frameworks such as TensorFlow or PyTorch are required.",
+        {
+            "entities": [
+                [
+                    17,
+                    23,
+                    "SKILL"
+                ],
+                [
+                    28,
+                    44,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "Candidates should be proficient in project management tools like JIRA and Trello.",
+        {
+            "entities": [
+                [
+                    35,
+                    53,
+                    "SKILL"
+                ],
+                [
+                    43,
+                    53,
+                    "SKILL"
+                ],
+                [
+                    65,
+                    69,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "Knowledge of SQL and database optimization techniques is essential.",
+        {
+            "entities": [
+                [
+                    30,
+                    42,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "Familiarity with RESTful APIs and microservices architecture is a big plus.",
+        {
+            "entities": [
+                [
+                    25,
+                    29,
+                    "SKILL"
+                ],
+                [
+                    48,
+                    60,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "The ideal candidate will have experience with data visualization tools such as Tableau or Power BI.",
+        {
+            "entities": [
+                [
+                    46,
+                    64,
+                    "SKILL"
+                ],
+                [
+                    79,
+                    86,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "We value professionals who have worked with CI/CD pipelines using Jenkins or GitHub Actions.",
+        {
+            "entities": [
+                [
+                    50,
+                    59,
+                    "SKILL"
+                ],
+                [
+                    66,
+                    73,
+                    "SKILL"
+                ],
+                [
+                    77,
+                    83,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
+        "Experience in Agile methodologies and strong communication skills are important.",
+        {
+            "entities": [
+                [
+                    14,
+                    33,
+                    "SKILL"
+                ],
+                [
+                    45,
+                    58,
+>>>>>>> e0bdf5ea (data creation):NeuralNetwork/data/spacy_training_data.json
                     "SKILL"
                 ]
             ]

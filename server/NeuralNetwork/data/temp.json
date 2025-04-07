@@ -1,5 +1,27 @@
 [
     [
+        "We are looking for a backend developer with experience in Java AWT",
+        {
+            "entities": [
+                [
+                    58,
+                    62,
+                    "SKILL"
+                ],
+                [
+                    58,
+                    66,
+                    "SKILL"
+                ],
+                [
+                    63,
+                    66,
+                    "SKILL"
+                ]
+            ]
+        }
+    ],
+    [
         "We are looking for a backend developer with experience in Node.js, MongoDB, and Docker.",
         {
             "entities": [
