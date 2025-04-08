@@ -66,8 +66,7 @@ def get_training_data():
         description = job.get('description')
         sentences = sentence_pattern.split(description)
         individual_sentences.extend(sentences)
-    with open("./output/outputData2.json", "w", encoding="utf-8") as f:
-        json.dump(individual_sentences, f, indent=4)
+    
     return individual_sentences
 
 

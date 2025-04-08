@@ -19,7 +19,7 @@ def scrape_web():
 #http://127.0.0.1:5000/api/v1/gendata
 @app.route('/api/v1/gendata', methods=['GET'])
 def gen_data():
-    t_data = get_training_data_sm()
+    t_data = get_training_data()
     with open('./output/output.json' , 'w') as f:
         json.dump(t_data, f)
         
