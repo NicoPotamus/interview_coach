@@ -12,52 +12,47 @@ API_HOST = "jsearch.p.rapidapi.com"
 
 # List of job titles to search
 job_titles = [
-    # Technology & Software Development
-    "Software Engineer", "Data Scientist", "Machine Learning Engineer", "Cybersecurity Analyst",
-    "Cloud Solutions Architect", "DevOps Engineer", "Full-Stack Developer", "IT Support Specialist",
-    "Embedded Systems Engineer", "AI Research Scientist",
+    # Hospitality & Travel
+    "Sommelier", "Cruise Director", "Hotel Concierge", "Travel Consultant", "Resort Manager",
+    "Tour Guide", "Event Planner", "Flight Attendant", "Airline Operations Manager", "Travel Blogger",
 
-    # Business & Finance
-    "Financial Analyst", "Investment Banker", "Actuary", "Risk Management Specialist", "Accountant",
-    "Management Consultant", "Payroll Administrator", "Tax Advisor", "Business Intelligence Analyst",
-    "Supply Chain Manager",
+    # Arts, Culture & Entertainment
+    "Museum Curator", "Stunt Coordinator", "Voice Actor", "Music Composer", "Art Restorer",
+    "Theatre Producer", "Tattoo Artist", "Cinematographer", "Foley Artist", "Set Designer",
 
-    # Healthcare & Medicine
-    "Registered Nurse", "Physician Assistant", "Medical Laboratory Technician", "Physical Therapist",
-    "Radiologic Technologist", "Clinical Research Associate", "Pharmacist", "Health Informatics Specialist",
-    "Nutritionist", "Medical Billing Specialist",
+    # Nature, Environment & Agriculture
+    "Wildlife Biologist", "Park Ranger", "Aquaculture Technician", "Urban Farmer", "Forester",
+    "Horticulturist", "Environmental Health Officer", "Conservation Scientist", "Beekeeper", "Soil and Water Conservationist",
 
-    # Science & Engineering
-    "Biomedical Engineer", "Civil Engineer", "Electrical Engineer", "Chemical Engineer", "Aerospace Engineer",
-    "Geospatial Analyst", "Materials Scientist", "Environmental Engineer", "Robotics Engineer", "Astrophysicist",
+    # Sports & Recreation
+    "Athletic Trainer", "Sports Statistician", "Referee/Umpire", "Sports Psychologist", "Recreation Director",
+    "Professional Gamer", "Equestrian Trainer", "Fitness Influencer", "Climbing Guide", "Scuba Instructor",
 
-    # Creative & Design
-    "Graphic Designer", "UX/UI Designer", "Motion Graphics Artist", "Interior Designer", "Art Director",
-    "Fashion Designer", "Video Editor", "3D Modeler", "Digital Marketing Specialist", "Game Designer",
+    # Transportation & Logistics
+    "Air Traffic Controller", "Railroad Conductor", "Maritime Pilot", "Drone Operator", "Logistics Coordinator",
+    "Freight Broker", "Delivery Route Planner", "Customs Compliance Officer", "Port Operations Manager", "Transportation Planner",
 
-    # Skilled Trades & Manufacturing
-    "CNC Machinist", "Electrician", "HVAC Technician", "Plumber", "Auto Mechanic", "Industrial Designer",
-    "Construction Project Manager", "Carpenter", "Welder", "Tool and Die Maker",
+    # Retail & Consumer Services
+    "Visual Merchandiser", "Antique Appraiser", "E-commerce Manager", "Customer Experience Designer", "Mystery Shopper",
+    "Retail Buyer", "Loss Prevention Specialist", "Store Planner", "Window Display Artist", "Shopping Assistant",
 
-    # Media & Communications
-    "Journalist", "Technical Writer", "Public Relations Specialist", "Content Strategist", "Social Media Manager",
-    "SEO Specialist", "Copywriter", "Broadcast Producer", "Event Coordinator", "Podcast Producer",
+    # Animal & Veterinary Services
+    "Veterinary Technician", "Animal Behaviorist", "Pet Groomer", "Wildlife Rehabilitator", "Animal Control Officer",
+    "Zookeeper", "Equine Massage Therapist", "Kennel Manager", "Exotic Animal Specialist", "Pet Nutrition Consultant",
 
-    # Education & Research
-    "Elementary School Teacher", "College Professor", "Curriculum Developer", "Instructional Designer",
-    "Education Consultant", "Academic Advisor", "Special Education Teacher", "Research Scientist", "Librarian",
-    "Educational Technologist",
+    # Religion & Spiritual Services
+    "Chaplain", "Religious Educator", "Interfaith Minister", "Spiritual Life Coach", "Monastic Artisan",
+    "Theologian", "Ritual Coordinator", "Pastoral Counselor", "Worship Music Leader", "Temple Administrator",
 
-    # Legal & Compliance
-    "Corporate Lawyer", "Paralegal", "Intellectual Property Attorney", "Compliance Officer", "Contract Manager",
-    "Data Privacy Specialist", "Immigration Attorney", "Legal Consultant", "Criminal Defense Attorney",
-    "Employment Law Specialist",
+    # Government & Public Service
+    "Urban Planner", "Census Enumerator", "Foreign Service Officer", "Public Affairs Specialist", "Emergency Management Director",
+    "City Clerk", "Community Outreach Coordinator", "Policy Analyst", "Legislative Aide", "Municipal Inspector",
 
-    # Emerging & Future Jobs
-    "Quantum Computing Researcher", "AI Ethics Consultant", "Space Systems Engineer", "Blockchain Developer",
-    "Virtual Reality Developer", "Renewable Energy Engineer", "Smart Cities Consultant", "Genetic Data Analyst",
-    "Cyber-Physical Systems Engineer", "Digital Twin Architect"
+    # Additional Titles
+    "Ethnomusicologist", "Disaster Relief Coordinator", "Toy Designer", "Hydrologist", "Forensic Linguist",
+    "Esports Coach", "Sleep Technologist", "Accessibility Specialist", "Auctioneer", "Cultural Heritage Manager"
 ]
+
 
 conn = http.client.HTTPSConnection("jsearch.p.rapidapi.com")
 

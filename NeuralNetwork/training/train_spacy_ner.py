@@ -106,6 +106,7 @@ plt.plot(range(1, len(loss_history) + 1), loss_history, marker='o', linestyle='-
 plt.xlabel("Epoch")
 plt.ylabel("NER Loss")
 plt.title("NER Model Training Loss Over Time")
+plt.savefig("./output_data/plot.png")
 plt.show()
 
 
