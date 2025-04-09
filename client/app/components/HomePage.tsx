@@ -2,24 +2,46 @@ import "./../../global.css"
 import * as React from "react";
 import { Image } from "react-native";
 import { Banner, Button, TextInput } from "react-native-paper";
-import { View, Text, FlatList } from "react-native";
+import { View, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Fragment } from "react";
+import OutputDisplay from "./OutputDisplay";
 
 export default function HomePage() {
   const [visible, setVisible] = React.useState(true); // Banner
   const [jobTitle, setJobTitle] = React.useState(""); // Search bar
   const [jobLocation, setJobLocation] = React.useState(""); // Search bar
   const [output, setOutput] = React.useState<string[]>([]); // Output area
+  const [loading, setLoading] = React.useState(false); // Loading state
 
-  const searchButtonPressed = () => {
+  const searchButtonPressed = async () => {
+    if (!jobTitle) return;
+    
+    setLoading(true);
     console.log(`Job Title: ${jobTitle}, Job Location: ${jobLocation}`);
-    // Example output data
-    setOutput([
-      "Skill 1: Communication",
-      "Skill 2: Teamwork",
-      "Skill 3: Problem-solving",
-    ]);
+    
+    try {
+      // Make API call to the server to fetch skills from web scraper
+      const response = await fetch(`http://localhost:5000/api/skills?job=${encodeURIComponent(jobTitle)}&location=${encodeURIComponent(jobLocation || '')}`);
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch data from scraper');
+      }
+      
+      const data = await response.json();
+      
+      // Format the skill data for display
+      const formattedSkills = data.skills.map((skill: { name: string, frequency: number }) => 
+        `${skill.name} - Identified in ${skill.frequency}% of job postings`
+      );
+      
+      setOutput(formattedSkills);
+    } catch (error) {
+      console.error("Error fetching skills:", error);
+      setOutput(["Error fetching skills from the job scraper. Please try again."]);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -73,6 +95,8 @@ export default function HomePage() {
                 icon="database-search"
                 mode="contained"
                 onPress={searchButtonPressed}
+                loading={loading}
+                disabled={loading || !jobTitle}
               >
                 Search Skills
               </Button>
@@ -80,18 +104,11 @@ export default function HomePage() {
           </View>
         </View>
         <View className="flex-1 p-4">
-          <Text className="font-bold text-xl">Output AREA</Text>
-          <View className="mt-2 flex-1">
-            {output.length > 0 ? (
-              <FlatList
-                data={output}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({ item }) => <Text>{`\u2022 ${item}`}</Text>}
-              />
-            ) : (
-              <Text>No data available</Text>
-            )}
-          </View>
+          <OutputDisplay 
+            title="Required Skills" 
+            data={output} 
+            loading={loading} 
+          />
         </View>
       </Fragment>
     </SafeAreaView>
