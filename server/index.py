@@ -20,7 +20,7 @@ def scrape_web():
 @app.route('/api/v1/gendata', methods=['GET'])
 def gen_data():
     t_data = get_training_data()
-    with open('./output/output.json' , 'w') as f:
+    with open('./output/output2.json' , 'w') as f:
         json.dump(t_data, f)
         
     return t_data
