@@ -39,7 +39,7 @@ with open(skill_file, "r", encoding="utf-8") as f:
 
 
 # Load your training data.
-with open("./data/gendata.json", "r") as f:
+with open("./data/gendata2.json", "r") as f:
     training_data = json.load(f)
 
 
