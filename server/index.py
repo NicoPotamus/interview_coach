@@ -1,14 +1,19 @@
 from flask import Flask, request
 from flask_cors import CORS
 from model.scraper.scraper import search_jobs
-from model.scraper.getTrainingData import get_training_data, get_training_data_sm
+from model.scraper.getTrainingData import get_training_data, get_training_data_sm, scrape_training_data
 import json
 from NeuralNetwork.querey import NER_description
+from NeuralNetwork.training.training_pipe import generate_training_data
+#make train_model function
+from NeuralNetwork.training.train_spacy_ner import train_model
 from model.output_stat.formatter import rank_skills
 
 
 app = Flask(__name__)
 CORS(app)
+
+
 # http://127.0.0.1:5000/api/v1/webscraper?job=engineer&location=USA
 @app.route('/api/v1/webscraper', methods=['GET'])
 def scrape_web():
@@ -25,6 +30,8 @@ def scrape_web():
     ##CALL FORMATTER HERE AND RETURN IT
     return rank_skills(skills)
 
+
+
 #http://127.0.0.1:5000/api/v1/gendata
 @app.route('/api/v1/gendata', methods=['GET'])
 def gen_data():
@@ -33,6 +40,30 @@ def gen_data():
         json.dump(t_data, f)
         
     return t_data
+
+
+
+
+@app.route('/api/v1/gendatapipe', methods=['POST'])
+def gen_data_pipe():
+    # Parse the JSON array from the request body
+    json_array = request.get_json()
+
+    # Ensure the input is a valid JSON array
+    if not isinstance(json_array, list):
+        return {"error": "Invalid input, expected a JSON array"}, 400
+
+    # Process each item in the array
+    individual_sentences = scrape_training_data(json_array)
+
+    #create training set
+    training_data = generate_training_data(individual_sentences)
+
+    #TODO: mix up data
+
+    #start training
+    return {"success": train_model(training_data)}, 200
+
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0", port=5000, debug=True)
