@@ -77,7 +77,11 @@ def scrape_job(job_url):
     return job
 
 # function to create a generic search based on user parameters
+#FULL PIPE
 def search_jobs(keywords, location):
+    """
+    LinkedIn job aggregator function, and scraper. FULL PIPELINE
+    """
     # Create the URL based on the keywords and location
     job_search_url = f"https://www.linkedin.com/jobs/search?keywords={keywords}&location={location}&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0"
     

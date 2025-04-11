@@ -3,6 +3,8 @@ from flask_cors import CORS
 from model.scraper.scraper import search_jobs
 from model.scraper.getTrainingData import get_training_data, get_training_data_sm
 import json
+from NeuralNetwork.query import NER_description
+from model.output_stat import rank_skills
 
 
 app = Flask(__name__)
@@ -14,7 +16,14 @@ def scrape_web():
     job = request.args.get('job')
     location = request.args.get('location')
     jobs = search_jobs(job, location)
-    return jobs
+    
+    skills = []
+    for job in jobs:
+        subsetofSkills = NER_description(job['description'])
+        skills += subsetofSkills
+    
+    ##CALL FORMATTER HERE AND RETURN IT
+    return rank_skills(skills)
 
 #http://127.0.0.1:5000/api/v1/gendata
 @app.route('/api/v1/gendata', methods=['GET'])

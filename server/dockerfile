@@ -1,17 +1,37 @@
-FROM python:3
+FROM debian:12
 
-# Set the working directory
+# Install Python, build tools, and curl
+RUN apt update -y && apt upgrade -y && \
+    apt install -y python3 python3.11-venv python3-pip build-essential curl
+
+# Set the working directory for the server
 WORKDIR /server
 
-COPY requirements.txt ./
+# Create and use a single virtual environment
+RUN python3 -m venv env
+ENV PATH="/server/env/bin:$PATH"
+
+# Upgrade pip in the virtual environment
+RUN pip install --upgrade pip
+
+# Copy and install dependencies
+COPY requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy the entire application, including NeuralNetwork
 COPY . .
 
+# Expose the server port
 EXPOSE 5000
 
-# Allow passing arguments correctly
-ENTRYPOINT ["python", "index.py"]
+# Default environment variable for NeuralNetwork script
+ENV SCRIPT_NAME=index.py
 
-#to run
-# docker run -v .../server/output:/server/output -p 5000:5000 image-name
+# Default entry point for the server
+ENTRYPOINT ["sh", "-c", "python $SCRIPT_NAME"]
+
+# Instructions for running:
+# To run the server:
+# docker run -v /path/to/server/output:/server/output -p 5000:5000 image-name
+# To run a NeuralNetwork script:
+# docker run -e SCRIPT_NAME=training/train_spacy_ner.py -v /path/to/host:/server/NeuralNetwork/output_data image-name
