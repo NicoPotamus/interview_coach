@@ -3,8 +3,8 @@ from flask_cors import CORS
 from model.scraper.scraper import search_jobs
 from model.scraper.getTrainingData import get_training_data, get_training_data_sm
 import json
-from NeuralNetwork.query import NER_description
-from model.output_stat import rank_skills
+from NeuralNetwork.querey import NER_description
+from model.output_stat.formatter import rank_skills
 
 
 app = Flask(__name__)

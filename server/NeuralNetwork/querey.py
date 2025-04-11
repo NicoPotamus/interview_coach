@@ -2,10 +2,9 @@
 import spacy
 
 # Load the trained NER model
-    nlp = spacy.load("./models/trained_ner_best")
+nlp = spacy.load("./NeuralNetwork/models/trained_ner_model_best")
 
 def NER_description(description):
-
     output = []
     for ent in doc.ents:
         if ent.label_ == "SKILL":
