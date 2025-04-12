@@ -16,3 +16,6 @@ Mark as DONE as tasks are completed
 - My listings(saved listings)
 - My skills(page that stores skills and categorizes them by learned or not learned)
 - Search Listings
+
+### Model Fine Tuning
+- continue tweaking model, getting the accuracy higher, and losses lower
