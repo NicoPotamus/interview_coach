@@ -64,7 +64,7 @@ def gen_data_pipe():
     masters_set = merge_datasets(training_data)
 
     #start training
-    return {"success": train_model(master_set)}, 200
+    return {"success": train_model(masters_set)}, 200
 
 
 if __name__ == '__main__':

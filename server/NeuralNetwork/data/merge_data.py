@@ -13,7 +13,7 @@ import hashlib
 # In[ ]:
 
 def merge_datasets(data2):
-    with open("data/data.json", "r", encoding="utf-8") as f1:
+    with open("./NeuralNetwork/data/data.json", "r", encoding="utf-8") as f1:
         data1 = json.load(f1)
 
     # with open("data/new_data.json", "r", encoding="utf-8") as f2:
@@ -40,7 +40,7 @@ def merge_datasets(data2):
     value = json.dumps(data2[0], sort_keys=True)  # Ensure consistent hashing
     hashed_value = hashlib.sha256(value.encode("utf-8")).hexdigest()
     print(f"SHA-256: {hashed_value}")
-    file_name = f"data/{hashed_value}.json"  # Add .json extension to the file name
+    file_name = f"./NeuralNetwork/data/{hashed_value}.json"  # Add .json extension to the file name
     
     # write to unique file
     with open(file_name, "w", encoding="utf-8") as f:
@@ -48,7 +48,7 @@ def merge_datasets(data2):
 
 
     # Save to a new JSON file
-    with open("data/data.json", "w", encoding="utf-8") as f:
+    with open("./NeuralNetwork/data/data.json", "w", encoding="utf-8") as f:
         json.dump(deduped, f, indent=4)
 
     print(f"Merged training data saved to 'merged_training_data.json' with {len(deduped)} unique examples.")
