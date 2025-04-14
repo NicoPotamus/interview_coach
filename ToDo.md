@@ -19,3 +19,6 @@ Mark as DONE as tasks are completed
 
 ### Model Fine Tuning
 - continue tweaking model, getting the accuracy higher, and losses lower
+- incorporate hard negatives(MAYBE)
+- WE NEED TO SCRAPE NEW DATA EVERY DAY
+- WE ALSO NEED TO TRAIN THE MODEL ON ALL DATA EVERY DAY 
