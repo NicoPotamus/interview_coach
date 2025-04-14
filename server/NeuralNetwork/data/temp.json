@@ -1,13 +1,5 @@
 [
     [
-<<<<<<< HEAD:server/NeuralNetwork/data/spacy_training_data.json
-        "About Us: We're on a mission to make it possible for every person, team, and company to be able to tailor their software to solve any problem and take on any challenge.",
-        {
-            "entities": [
-                [
-                    112,
-                    120,
-=======
         "We are looking for a backend developer with experience in Java AWT",
         {
             "entities": [
@@ -24,21 +16,12 @@
                 [
                     63,
                     66,
->>>>>>> e0bdf5ea (data creation):NeuralNetwork/data/spacy_training_data.json
                     "SKILL"
                 ]
             ]
         }
     ],
     [
-<<<<<<< HEAD:server/NeuralNetwork/data/spacy_training_data.json
-        "Computers may be our most powerful tools, but most of us can't build or modify the software we use on them every day.",
-        {
-            "entities": [
-                [
-                    83,
-                    91,
-=======
         "We are looking for a backend developer with experience in Node.js, MongoDB, and Docker.",
         {
             "entities": [
@@ -174,7 +157,6 @@
                 [
                     45,
                     58,
->>>>>>> e0bdf5ea (data creation):NeuralNetwork/data/spacy_training_data.json
                     "SKILL"
                 ]
             ]
