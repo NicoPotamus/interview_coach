@@ -1,7 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 server/venv
-server\model\output_stat\__pycache__
+server/model/output_stat/__pycache__
+server/model/scraper/__pycache__
+server/NeuralNetwork/__pycache__
+**/__pycache__/
 
 /NeuralNetwork/env
 /myenv

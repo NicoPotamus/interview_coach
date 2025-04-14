@@ -8,7 +8,7 @@ from NeuralNetwork.training.training_pipe import generate_training_data
 #make train_model function
 from NeuralNetwork.training.train_spacy_ner import train_model
 from model.output_stat.formatter import rank_skills
-
+from NeuralNetwork.data.merge_data import merge_datasets
 
 app = Flask(__name__)
 CORS(app)
@@ -43,7 +43,8 @@ def gen_data():
 
 
 
-
+# http://127.0.0.1:5000/api/v1/gendataPipe
+# attatch json array to body of post request
 @app.route('/api/v1/gendatapipe', methods=['POST'])
 def gen_data_pipe():
     # Parse the JSON array from the request body
@@ -60,9 +61,10 @@ def gen_data_pipe():
     training_data = generate_training_data(individual_sentences)
 
     #TODO: mix up data
+    masters_set = merge_datasets(training_data)
 
     #start training
-    return {"success": train_model(training_data)}, 200
+    return {"success": train_model(master_set)}, 200
 
 
 if __name__ == '__main__':

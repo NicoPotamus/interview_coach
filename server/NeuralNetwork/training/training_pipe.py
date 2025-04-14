@@ -18,7 +18,7 @@ from spacy.util import filter_spans
 
 # In[ ]:
 
-model_path = os.path.abspath("./models/trained_ner_model_best")
+model_path = os.path.abspath("./NeuralNetwork/models/trained_ner_model_best")
 print(f"Loading model from: {model_path}")
 #load our model
 nlp = spacy.load(model_path)
@@ -29,7 +29,7 @@ matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
 
 
 # Load skills from a linkedin skills file
-skill_file = os.path.abspath("./data/linkedin_skills.txt")
+skill_file = os.path.abspath("./NeuralNetwork/data/linkedin_skills.txt")
 
 with open(skill_file, "r", encoding="utf-8") as f:
     skill_list = [line.strip() for line in f.readlines() if line.strip()]
@@ -39,7 +39,7 @@ with open(skill_file, "r", encoding="utf-8") as f:
 
 
 # Load your training data.
-with open("./data/gendata2.json", "r") as f:
+with open("./NeuralNetwork/data/gendata2.json", "r") as f:
     training_data = json.load(f)
 
 
@@ -164,21 +164,21 @@ def generate_training_data(sentence_templates):
 # In[ ]:
 
 
-# Generate training data
-training_data = generate_training_data(training_data)
+# # Generate training data
+# training_data = generate_training_data(training_data)
 
 
-# In[ ]:
+# # In[ ]:
 
 
-# Save labeled data in spaCy format
-output_file = "./output_data/spacy_training_data.json"
-with open(output_file, "w") as f:
-    json.dump(training_data, f, indent=4)
+# # Save labeled data in spaCy format
+# output_file = "./output_data/spacy_training_data.json"
+# with open(output_file, "w") as f:
+#     json.dump(training_data, f, indent=4)
 
 
-# In[ ]:
+# # In[ ]:
 
 
-print(f"Labeled training data saved to {output_file} with {len(training_data)} sentences!")
+# print(f"Labeled training data saved to {output_file} with {len(training_data)} sentences!")
 
