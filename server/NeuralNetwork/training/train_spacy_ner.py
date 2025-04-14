@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 
 # In[ ]:
 def train_model (training_data):
+    nlp = spacy.load("en_core_web_sm")  # Load the base model
 
     if "ner" not in nlp.pipe_names:
         ner = nlp.add_pipe("ner", last=True)
