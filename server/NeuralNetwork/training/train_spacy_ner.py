@@ -54,7 +54,7 @@ def train_model (training_data):
             if losses["ner"] < best_loss:
                 best_loss = losses["ner"]
                 best_epoch = epoch + 1
-                nlp.to_disk("./models/trained_ner_model_best")
+                nlp.to_disk("./NeuralNetwork/models/trained_ner_model_best")
 
     # Save final trained model
     nlp.to_disk("./NeuralNetwork/models/trained_ner_model")

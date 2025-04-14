@@ -148,6 +148,11 @@
     ]
   },
   "pipeline":[
+    "tok2vec",
+    "tagger",
+    "parser",
+    "attribute_ruler",
+    "lemmatizer",
     "ner"
   ],
   "components":[
@@ -160,12 +165,7 @@
     "ner"
   ],
   "disabled":[
-    "tok2vec",
-    "tagger",
-    "parser",
-    "senter",
-    "attribute_ruler",
-    "lemmatizer"
+    "senter"
   ],
   "performance":{
     "token_acc":0.9986194413,
