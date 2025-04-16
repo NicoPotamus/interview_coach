@@ -1,7 +1,6 @@
 ###
 http://127.0.0.1:5000/api/v1/webscraper?job=Engineer&location=USA
 
-
 ###
 POST http://127.0.0.1:5000/api/v1/gendatapipe
 Content-Type: application/json
