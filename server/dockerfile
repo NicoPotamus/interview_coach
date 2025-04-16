@@ -36,3 +36,17 @@ ENTRYPOINT ["sh", "-c", "python $SCRIPT_NAME"]
 # docker run -v /path/to/server/output:/server/output -p 5000:5000 image-name
 # To run a NeuralNetwork script:
 # docker run -e SCRIPT_NAME=training/train_spacy_ner.py -v /path/to/host:/server/NeuralNetwork/output_data image-name
+
+
+
+
+# Everything below is for the database
+# FROM python:3.11-slim
+
+# WORKDIR /app
+
+# COPY . .
+
+# RUN pip install --no-cache-dir -r requirements.txt
+
+# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

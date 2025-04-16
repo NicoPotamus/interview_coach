@@ -2,7 +2,8 @@
 Mark as DONE as tasks are completed
 
 ### set up server
-- pull repo into our shared folder on the server
+- Have the page up on chimara
+- set up the URL
 
 ### Database
 - set up database to store user information
