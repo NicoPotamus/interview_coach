@@ -64,7 +64,7 @@ def train_model (training_data):
     plt.xlabel("Epoch")
     plt.ylabel("NER Loss")
     plt.title("NER Model Training Loss Over Time")
-    plt.savefig("./output_data/plot.png")
+    plt.savefig("./NeuralNetowrk/data/plot.png")
     plt.show()
 
     return (f"Model training complete! Best model saved at epoch {best_epoch} with loss {best_loss}")

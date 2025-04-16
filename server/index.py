@@ -43,7 +43,7 @@ def gen_data():
 
 
 
-# http://127.0.0.1:5000/api/v1/gendataPipe
+# http://127.0.0.1:5000/api/v1/gendatapipe
 # attatch json array to body of post request
 @app.route('/api/v1/gendatapipe', methods=['POST'])
 def gen_data_pipe():
@@ -63,8 +63,9 @@ def gen_data_pipe():
     #TODO: mix up data
     masters_set = merge_datasets(training_data)
 
+    modelOutput = train_model(masters_set)
     #start training
-    return {"success": train_model(masters_set)}, 200
+    return {"success": modelOutput}, 200
 
 
 if __name__ == '__main__':
