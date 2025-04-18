@@ -79,3 +79,8 @@ ENTRYPOINT ["sh", "-c", "$SCRIPT_NAME"]
     # docker run -p 5000:5000 -v /Users/bryan/Desktop/School/Spring2025/Projects/InterviewCoach/interview_coach/server/NeuralNetwork/data:/server/NeuralNetwork/data -v /Users/bryan/Desktop/School/Spring2025/Projects/InterviewCoach/interview_coach/server/NeuralNetwork/models:/server/NeuralNetowrk/models grande-server
 
 
+# RUN DOCKER COMPOSE
+#docker compose down -v
+#docker compose build --no-cache
+#docker compose up
+
