@@ -1,19 +1,21 @@
 from fastapi import FastAPI
 from fastapi_jwt_auth import AuthJWT
+from pydantic import BaseSettings
 from app.routes import users
 from app.database import Base, engine
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
+# Create DB tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-
 app.include_router(users.router)
 
-class Settings:
-    authjwt_secret_key: str = os.getenv("JWT_SECRET")
+# JWT Settings using Pydantic
+class Settings(BaseSettings):
+    authjwt_secret_key: str
+
+    class Config:
+        env_file = ".env"  # Automatically load from .env
 
 @AuthJWT.load_config
 def get_config():
