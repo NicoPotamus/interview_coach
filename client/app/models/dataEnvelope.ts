@@ -9,3 +9,10 @@ export interface DataListEnvelope<T> extends DataEnvelope<T[]> {
   data: T[]
   total: number
 }
+
+export interface skillData {
+  skill:string
+  frequency:number
+  isSuccess:boolean
+  message?:string
+}

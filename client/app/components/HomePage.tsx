@@ -1,40 +1,28 @@
-import "./../../global.css"
-import * as React from "react";
-import { Image } from "react-native";
-import { Banner, Button, TextInput } from "react-native-paper";
-import { View, Text } from "react-native";
+import React, { useState } from "react";
+import { View, Text, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Fragment } from "react";
+import { Banner, Button, TextInput } from "react-native-paper";
+import searchJob from "../models/scraper";
 import OutputDisplay from "./OutputDisplay";
 
 export default function HomePage() {
-  const [visible, setVisible] = React.useState(true); // Banner
-  const [jobTitle, setJobTitle] = React.useState(""); // Search bar
-  const [jobLocation, setJobLocation] = React.useState(""); // Search bar
-  const [output, setOutput] = React.useState<string[]>([]); // Output area
-  const [loading, setLoading] = React.useState(false); // Loading state
+  const [visible, setVisible] = React.useState(true);
+  const [jobTitle, setJobTitle] = React.useState("");
+  const [jobLocation, setJobLocation] = React.useState("");
+  const [output, setOutput] = React.useState<string[]>([]);
+  const [loading, setLoading] = React.useState(false);
 
-  const searchButtonPressed = async () => {
+  const handleSearch = React.useCallback(async () => {
     if (!jobTitle) return;
     
     setLoading(true);
-    console.log(`Job Title: ${jobTitle}, Job Location: ${jobLocation}`);
-    
     try {
-      // Make API call to the server to fetch skills from web scraper
-      const response = await fetch(`http://localhost:5000/api/skills?job=${encodeURIComponent(jobTitle)}&location=${encodeURIComponent(jobLocation || '')}`);
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch data from scraper');
-      }
-      
-      const data = await response.json();
-      
-      // Format the skill data for display
-      const formattedSkills = data.skills.map((skill: { name: string, frequency: number }) => 
-        `${skill.name} - Identified in ${skill.frequency}% of job postings`
+      const response = await searchJob(jobTitle, jobLocation);
+      console.log("Response from scraper:", response);
+      const formattedSkills = response.data.map(
+        ([skill, count]: [string, number]) =>
+          `${skill} - Identified in ${count} job postings`
       );
-      
       setOutput(formattedSkills);
     } catch (error) {
       console.error("Error fetching skills:", error);
@@ -42,11 +30,10 @@ export default function HomePage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [jobTitle, jobLocation]);
 
   return (
     <SafeAreaView className="flex-1">
-      <Fragment>
         <View className="flex-1 justify-center">
           <Text className="font-bold text-2xl text-center">Interview Coach</Text>
           <Banner
@@ -78,14 +65,14 @@ export default function HomePage() {
               <TextInput
                 label="Job Title"
                 value={jobTitle}
-                onChangeText={(jobTitle) => setJobTitle(jobTitle)}
+                onChangeText={setJobTitle}
                 className="mb-4"
               />
             </View>
             <TextInput
               label="Location"
               value={jobLocation}
-              onChangeText={(jobLocation) => setJobLocation(jobLocation)}
+              onChangeText={setJobLocation}
               className="mb-4"
             />
           </View>
@@ -94,7 +81,7 @@ export default function HomePage() {
               <Button
                 icon="database-search"
                 mode="contained"
-                onPress={searchButtonPressed}
+                onPress={handleSearch}
                 loading={loading}
                 disabled={loading || !jobTitle}
               >
@@ -110,7 +97,6 @@ export default function HomePage() {
             loading={loading} 
           />
         </View>
-      </Fragment>
     </SafeAreaView>
   );
 }

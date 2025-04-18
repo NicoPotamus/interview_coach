@@ -1,5 +1,5 @@
 
-const API_URL = process.env.API_URL
+import { API_URL } from '@env'
 
 export function rest<T>(
   url: string,
@@ -18,5 +18,6 @@ export function rest<T>(
 }
 
 export function api<T>(url: string, data?: any, method?: string): Promise<T> {
+  console.log('API URL:', API_URL + url) // Log the full URL
   return rest<T>(API_URL + url, data, method)
 }

@@ -32,12 +32,6 @@ const MyComponent = () => {
       unfocusedIcon: 'chart-bar' 
     },
     { 
-      key: 'skilltree', 
-      title: 'Skill Tree', 
-      focusedIcon: 'account-tree', 
-      unfocusedIcon: 'account-tree-outline' 
-    },
-    { 
       key: 'settings', 
       title: 'Settings', 
       focusedIcon: 'cog', 

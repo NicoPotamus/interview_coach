@@ -1,8 +1,10 @@
-import type { DataEnvelope, DataListEnvelope } from './dataEnvelope'
+import type { DataEnvelope, DataListEnvelope, } from './dataEnvelope'
 import { api } from './myFetch'
+import { API_URL } from "@env";
 
-export default function searchJob(jobTitle: string, jobLocation: string) {
-  return api<DataListEnvelope<String>>(`/api/v1/webscraper?job=${jobTitle}&location=${jobLocation}`)
+export default function searchJob(jobTitle: string, jobLocation?: string) {
+  const location = jobLocation && jobLocation.trim() !== '' ? jobLocation : 'USA';
+  return api<DataListEnvelope<[string, number]>>(`/api/v1/webscraper?job=${jobTitle}&location=${location}`)
     .then((response) => {
       return response; // Handle the resolved value here
     })
@@ -11,3 +13,4 @@ export default function searchJob(jobTitle: string, jobLocation: string) {
       throw error; // Re-throw the error if needed
     });
 }
+

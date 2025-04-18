@@ -5,14 +5,22 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@env": [
+        "./types/env.d.ts"
       ]
-    }
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ]
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "nativewind-env.d.ts"
+    "nativewind-env.d.ts",
+    "types/**/*.d.ts" // Include the types folder
   ]
 }

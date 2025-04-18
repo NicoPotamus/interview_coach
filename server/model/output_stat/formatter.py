@@ -11,4 +11,7 @@ def rank_skills(skills):
             skill_counts[skill_lower] += 1
         else:
             skill_counts[skill_lower] = 1
-    return skill_counts
+            
+    sorted_skills = sorted(skill_counts.items(), key=lambda x: x[1], reverse=True)
+
+    return sorted_skills

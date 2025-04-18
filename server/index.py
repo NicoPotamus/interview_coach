@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from model.scraper.scraper import search_jobs
 from model.scraper.getTrainingData import get_training_data, get_training_data_sm, scrape_training_data
@@ -27,8 +27,9 @@ def scrape_web():
         subsetofSkills = NER_description(job['description'])
         skills += subsetofSkills
     
-    ##CALL FORMATTER HERE AND RETURN IT
-    return rank_skills(skills)
+    # Call rank_skills and return the result as JSON
+    ranked_skills = rank_skills(skills)
+    return jsonify(ranked_skills), 200
 
 
 
