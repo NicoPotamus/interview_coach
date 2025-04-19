@@ -23,7 +23,7 @@ services:
       MYSQL_USER: coach_user
       MYSQL_PASSWORD: coach_pass
     ports:
-      - "3306:3306"
+      - "5500:3306" # map host port 5500 to container port 3306
     volumes:
       - mysql_data:/var/lib/mysql # create a folder in volumes for safe keeping
 
