@@ -11,7 +11,7 @@ services:
       - db
     volumes:
       - ./NeuralNetwork/data:/server/NeuralNetwork/data
-      - ./NeuralNetwork/models:/server/NeuralNetwork/models
+      - ./NeuralNetwork/models:/server/NeuralNetwork/models #map host system to container
 
   db:
     image: mysql:8.0        
@@ -25,7 +25,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - mysql_data:/var/lib/mysql
+      - mysql_data:/var/lib/mysql # create a folder in volumes for safe keeping
 
 volumes:
   mysql_data:

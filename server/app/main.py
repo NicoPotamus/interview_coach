@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi_jwt_auth import AuthJWT
+from app.routes import users, scraper  
 from pydantic import BaseSettings
-from app.routes import users
 from app.database import Base, engine
 
 # Create DB tables
@@ -9,6 +9,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 app.include_router(users.router)
+app.include_router(scraper.router)  
 
 # JWT Settings using Pydantic
 class Settings(BaseSettings):
