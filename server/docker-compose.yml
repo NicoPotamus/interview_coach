@@ -9,6 +9,9 @@ services:
       - .env
     depends_on:
       - db
+    volumes:
+      - ./NeuralNetwork/data:/server/NeuralNetwork/data
+      - ./NeuralNetwork/models:/server/NeuralNetwork/models
 
   db:
     image: mysql:8.0        
