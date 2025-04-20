@@ -11,6 +11,20 @@ app = FastAPI()
 app.include_router(users.router)
 app.include_router(scraper.router)  
 
+origins = [
+    "http://localhost",
+    "http://localhost:8081",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 # JWT Settings using Pydantic
 class Settings(BaseSettings):
     authjwt_secret_key: str
