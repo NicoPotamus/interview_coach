@@ -10,7 +10,7 @@ const JobsRoute = () => <JobPostings />;
 const AnalysisRoute = () => <SkillAnalysis />;
 const SettingsRoute = () => null; // Placeholder for future settings component
 
-const MyComponent = () => {
+const Navbar = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { 
@@ -57,4 +57,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default Navbar;
