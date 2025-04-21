@@ -14,6 +14,10 @@ app.include_router(scraper.router)
 origins = [
     "http://localhost",
     "http://localhost:8081",
+    "https://hydra.newpaltz.edu",
+    "https://hydra.newpaltz.edu:8081",
+    "http://hydra.newpaltz.edu:8081"
+    "http://hydra.newpaltz.edu"
 ]
 
 app.add_middleware(
