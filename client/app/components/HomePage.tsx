@@ -19,7 +19,7 @@ export default function HomePage() {
     try {
       const response = await searchJob(jobTitle, jobLocation);
       console.log("Response from scraper:", response);
-      const formattedSkills = response.data.map(
+      const formattedSkills = response.map(
         ([skill, count]: [string, number]) =>
           `${skill} - Identified in ${count} job postings`
       );
