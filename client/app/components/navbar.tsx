@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { BottomNavigation } from 'react-native-paper';
-import HomePage from './HomePage';
-import JobPostings from './JobPostings';
-import SkillAnalysis from './SkillAnalysis';
+import HomePage from '@/app/components/HomePage';
+import JobPostings from '@/app/components/JobPostings';
+import SkillAnalysis from '@/app/components/SkillAnalysis';
 
 // Define route components
 const HomeRoute = () => <HomePage />;

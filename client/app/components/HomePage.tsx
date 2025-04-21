@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { View, Text, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Banner, Button, TextInput } from "react-native-paper";
-import searchJob from "../models/scraper";
-import OutputDisplay from "./OutputDisplay";
+import searchJob from "@/app/models/scraper";
+import OutputDisplay from "@/app/components/OutputDisplay";
 
 export default function HomePage() {
   const [visible, setVisible] = React.useState(true);
