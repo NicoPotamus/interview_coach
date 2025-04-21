@@ -46,17 +46,17 @@ def gen_data():
 
 
 @router.post("/api/v1/gendatapipe")
-def gen_data_pipe(json_array: list[dict]):
+def gen_data_pipe(job_titles: list[str]):
     """
-    Accepts a JSON array of job descriptions in the body and returns model training output.
-    Example payload: [{ "description": "Software engineer with Python experience..." }, ...]
+    Accepts a JSON array of job titles in the body and returns model training output.
+    Example payload: ["Software Engineer", "Data Scientist", ...]
     """
-    if not isinstance(json_array, list):
-        raise HTTPException(status_code=400, detail="Invalid input, expected a JSON array")
+    if not isinstance(job_titles, list):
+        raise HTTPException(status_code=400, detail="Invalid input, expected a JSON array of strings")
 
     try:
-        individual_sentences = scrape_training_data(json_array)
-        training_data = generate_training_data(individual_sentences)
+        individual_sentences = scrape_training_data(job_titles)
+        training_data = generate_training_data(individual_sentences) 
         masters_set = merge_datasets(training_data)
         model_output = train_model(masters_set)
         return {"success": model_output}
