@@ -59,6 +59,7 @@ def gen_data_pipe(job_titles: list[str]):
         training_data = generate_training_data(individual_sentences) 
         masters_set = merge_datasets(training_data)
         model_output = train_model(masters_set)
+        # TODO: add text notification fn here put both phone numbers " done training "
         return {"success": model_output}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Training pipeline failed: {e}")
