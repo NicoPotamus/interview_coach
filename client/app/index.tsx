@@ -1,9 +1,10 @@
+import { registerRootComponent } from "expo";
 import * as React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { PaperProvider } from "react-native-paper";
 import Navbar from "./components/navbar";
 
-export default function Index() {
+function Index() {
   return (
     <SafeAreaProvider>
       <PaperProvider>
@@ -12,3 +13,8 @@ export default function Index() {
     </SafeAreaProvider>
   );
 }
+
+// Register the root component
+registerRootComponent(Index);
+
+export default Index;
