@@ -1,6 +1,6 @@
 import type { DataEnvelope, DataListEnvelope, } from './dataEnvelope'
 import { api } from './myFetch'
-import { API_URL } from "@env";
+
 
 export default function searchJob(jobTitle: string, jobLocation?: string) {
   const location = jobLocation && jobLocation.trim() !== '' ? jobLocation : 'USA';

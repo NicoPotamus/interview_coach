@@ -15,9 +15,8 @@ origins = [
     "http://localhost",
     "http://localhost:8081",
     "https://hydra.newpaltz.edu",
-    "https://hydra.newpaltz.edu:8081",
-    "http://hydra.newpaltz.edu:8081"
-    "http://hydra.newpaltz.edu"
+    "http://192.168.1.160:8081",
+    "https://192.168.1.160:8081/"
 ]
 
 app.add_middleware(
