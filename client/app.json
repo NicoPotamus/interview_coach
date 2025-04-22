@@ -19,6 +19,9 @@
     },
     "web": {
       "bundler": "metro",
+      "build": {
+        "publicPath": "/interview_coach/"
+      },
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
