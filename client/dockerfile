@@ -12,13 +12,13 @@ RUN npm install
 COPY . .
 
 # Build the Expo web application
-RUN npx expo export:web
+RUN npx expo export -p web
 
 # Install serve globally
 RUN npm install -g serve
 
 # Expose port 3000
-EXPOSE 3000
+EXPOSE 8081
 
 # Serve the dist directory
-CMD ["npx", "serve", "dist", "-l", "3000"]
+CMD ["npx", "serve", "dist", "-l", "8081"]

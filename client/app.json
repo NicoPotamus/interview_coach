@@ -22,7 +22,7 @@
       "build": {
         "publicPath": "/interview_coach/"
       },
-      "output": "static",
+      "output": "server",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
