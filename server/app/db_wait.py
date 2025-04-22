@@ -28,4 +28,4 @@ def wait_for_db(url: str, timeout: int = 30, interval: int = 2):
             print(f"Still waiting... {e}")
             time.sleep(interval)
 
-    raise TimeoutError(f"❌ Could not connect to the database after {timeout} seconds.")
+    raise TimeoutError(f"Could not connect to the database after {timeout} seconds.")

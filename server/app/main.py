@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi_jwt_auth import AuthJWT
-from app.routes import users, scraper  
+from app.routes import users, scraper, auth_routes
 from pydantic import BaseSettings
 from app.database import Base, engine
 
@@ -11,6 +11,8 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI()
 app.include_router(users.router)
 app.include_router(scraper.router)  
+app.include_router(auth_routes.router)
+
 
 origins = [
     "http://localhost",
