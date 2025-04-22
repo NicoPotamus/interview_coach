@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Build the Expo web application
-RUN npx expo export -p web
+RUN PUBLIC_URL=/interview_coach/ npx expo export -p web
 
 
 # Install serve globally
