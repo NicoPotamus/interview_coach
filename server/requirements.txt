@@ -140,6 +140,7 @@ uvicorn
 sqlalchemy
 pymysql
 python-dotenv
-passlib[bcrypt]
+bcrypt==3.2.2
 fastapi-jwt-auth
 email-validator
+passlib[bcrypt]
