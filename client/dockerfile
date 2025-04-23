@@ -22,4 +22,4 @@ RUN npm install -g serve
 EXPOSE 8081
 
 # Serve the dist directory
-CMD ["npx", "serve", "dist", "-l", "8081"]
+CMD ["npx", "serve", "dist", "-l", "8081", "-s"]

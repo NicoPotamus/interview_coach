@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 import re
+from concurrent.futures import ThreadPoolExecutor
+import threading
 
 from .ipRotator import assemble_ip_string  # Use relative import
 
@@ -90,9 +92,26 @@ def search_jobs(keywords, location):
     
     # Scrape the job details
     jobs = []
-    for job_url in job_urls:
-        job = scrape_job(job_url)
-        jobs.append(job)
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        # map the scrape_job function to the job URLs
+        # This is equivalent to:
+        future_to_url = {}
+        for job_url in job_urls:
+            future = executor.submit(scrape_job, job_url)  # Submit task to thread pool
+            future_to_url[future] = job_url                # Store mapping of Future to URL
+
+        # Collect results as they complete
+        for future in concurrent.futures.as_completed(future_to_url):
+            try:
+                job = future.result()
+                jobs.append(job)
+            except Exception as e:
+                print(f"Error scraping job: {e}")
+
+    # for job_url in job_urls:
+    #     job = scrape_job(job_url)
+    #     jobs.append(job)
+    #  append 
     
     return jobs
 
