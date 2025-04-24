@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import re
+import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor
 import threading
 
@@ -118,14 +119,14 @@ def search_jobs(keywords, location):
     
 #main function
 # def main():
-#     #test data extraction from posting GOOD, but the description is a bit messy
-#     jsonOut = scrape_job("https://www.linkedin.com/jobs/view/talent-sourcer-business-recruiter-at-nextdoor-4175126786?position=1&pageNum=0&refId=tN0PAUlrGxG3XCfYSe9HVQ%3D%3D&trackingId=rwSmpNpOvpiTlpyEr7%2FhFw%3D%3D")
-#     print("loading")
-#     #print(jsonOut)
+#     # #test data extraction from posting GOOD, but the description is a bit messy
+#     # jsonOut = scrape_job("https://www.linkedin.com/jobs/view/talent-sourcer-business-recruiter-at-nextdoor-4175126786?position=1&pageNum=0&refId=tN0PAUlrGxG3XCfYSe9HVQ%3D%3D&trackingId=rwSmpNpOvpiTlpyEr7%2FhFw%3D%3D")
+#     # print("loading")
+#     # #print(jsonOut)
     
-#     # test url aggregation GOOD
-#     job_urls = retrieve_job_urls("https://www.linkedin.com/jobs/search?keywords=Software%20Engineer&location=USA&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0")
-#     #print(job_urls)
+#     # # test url aggregation GOOD
+#     # job_urls = retrieve_job_urls("https://www.linkedin.com/jobs/search?keywords=Software%20Engineer&location=USA&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0")
+#     # #print(job_urls)
     
 #     # test url factory
 #     jobs = search_jobs("Cyber security", "USA")
