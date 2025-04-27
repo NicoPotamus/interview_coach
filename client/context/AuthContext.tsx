@@ -12,35 +12,51 @@ interface AuthContextProps {
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);
 
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [token, setToken] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true); // <-- loading state
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const loadToken = async () => {
-      const storedToken = await AsyncStorage.getItem("token");
-      if (storedToken) {
-        setToken(storedToken);
-        setIsAuthenticated(true);
-      } else {
+      try {
+        const storedToken = await AsyncStorage.getItem("token");
+        if (storedToken) {
+          setToken(storedToken);
+          setIsAuthenticated(true);
+        } else {
+          setToken(null);
+          setIsAuthenticated(false);
+        }
+      } catch (error) {
+        console.error("Error loading token from AsyncStorage", error);
         setToken(null);
         setIsAuthenticated(false);
+      } finally {
+        setLoading(false); // Always end loading no matter what
       }
-      setLoading(false); // <-- done loading after checking
     };
+
     loadToken();
   }, []);
 
   const login = async (newToken: string) => {
-    await AsyncStorage.setItem("token", newToken);
-    setToken(newToken);
-    setIsAuthenticated(true);
+    try {
+      await AsyncStorage.setItem("token", newToken);
+      setToken(newToken);
+      setIsAuthenticated(true);
+    } catch (error) {
+      console.error("Error saving token during login", error);
+    }
   };
 
   const logout = async () => {
-    await AsyncStorage.removeItem("token");
-    setToken(null);
-    setIsAuthenticated(false);
+    try {
+      await AsyncStorage.removeItem("token");
+      setToken(null);
+      setIsAuthenticated(false);
+    } catch (error) {
+      console.error("Error removing token during logout", error);
+    }
   };
 
   return (

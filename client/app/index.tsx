@@ -1,30 +1,23 @@
-import * as React from "react";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { PaperProvider } from "react-native-paper";
+import { useAuth } from "@/context/AuthContext";
+import { Redirect } from "expo-router";
 import Navbar from "@/components/Navbar";
-import { useAuth, AuthProvider } from "@/context/AuthContext"; // Import BOTH
-import { Redirect } from "expo-router"; // Import Redirect
+import LoadingScreen from "@/components/LoadingScreen"; // <- import it!
+import { PaperProvider } from "react-native-paper";
 
-export default function Index() {
-  return (
-    <AuthProvider>
-      <ProtectedRoutes />
-    </AuthProvider>
-  );
-}
+export default function HomeScreen() {
+  const { isAuthenticated, loading } = useAuth();
 
-function ProtectedRoutes() {
-  const { isAuthenticated } = useAuth(); // This will now work correctly
+  if (loading) {
+    return <LoadingScreen />; // <- cleaner loading
+  }
 
   if (!isAuthenticated) {
     return <Redirect href="/login" />;
   }
 
   return (
-    <SafeAreaProvider>
-      <PaperProvider>
-        <Navbar />
-      </PaperProvider>
-    </SafeAreaProvider>
+    <PaperProvider>
+      <Navbar />
+    </PaperProvider>
   );
 }
