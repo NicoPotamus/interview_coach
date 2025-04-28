@@ -15,7 +15,7 @@ class LoginModel(BaseModel):
     email: EmailStr
     password: str
 
-@router.post("/auth/register")
+@router.post("/register")
 def register(user: RegisterModel, db: Session = Depends(get_db)):
     existing = db.query(User).filter(User.email == user.email).first()
     if existing:
@@ -27,7 +27,7 @@ def register(user: RegisterModel, db: Session = Depends(get_db)):
     db.refresh(new_user)
     return {"msg": "User created successfully"}
 
-@router.post("/auth/login")
+@router.post("/login")
 def login(user: LoginModel, db: Session = Depends(get_db), Authorize: AuthJWT = Depends()):
     existing = db.query(User).filter(User.email == user.email).first()
     if not existing or not verify_password(user.password, existing.password):
