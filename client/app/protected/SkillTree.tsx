@@ -21,19 +21,24 @@ interface SkillTree {
 export default function SkillTreePage() {
   const theme = useTheme();
 
-  const [trees, setTrees] = useState<SkillTree[]>([{ id: "tree1", name: "Main Tree", nodes: [
-    { id: "1", label: "Programming", x: 180, y: 50 },
-    { id: "2", label: "Frontend", x: 80, y: 180, parentId: "1" },
-    { id: "3", label: "Backend", x: 280, y: 180, parentId: "1" },
-    { id: "4", label: "React", x: 30, y: 300, parentId: "2" },
-    { id: "5", label: "Node.js", x: 230, y: 300, parentId: "3" },
-  ]}]);
+  const [trees, setTrees] = useState<SkillTree[]>([{
+    id: "tree1",
+    name: "Main Tree",
+    nodes: [
+      { id: "1", label: "Programming", x: 180, y: 50 },
+      { id: "2", label: "Frontend", x: 80, y: 180, parentId: "1" },
+      { id: "3", label: "Backend", x: 280, y: 180, parentId: "1" },
+      { id: "4", label: "React", x: 30, y: 300, parentId: "2" },
+      { id: "5", label: "Node.js", x: 230, y: 300, parentId: "3" },
+    ]
+  }]);
 
   const [selectedTreeId, setSelectedTreeId] = useState<string>("tree1");
   const [selectedNodes, setSelectedNodes] = useState<string[]>([]);
   const [newTreeName, setNewTreeName] = useState("");
   const [draggingNodeId, setDraggingNodeId] = useState<string | null>(null);
   const [dragStartPosition, setDragStartPosition] = useState<{ x: number, y: number } | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
 
   const [showMenu, setShowMenu] = useState(false);
   const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
@@ -49,11 +54,13 @@ export default function SkillTreePage() {
   const startDragging = (nodeId: string, x: number, y: number) => {
     setDraggingNodeId(nodeId);
     setDragStartPosition({ x, y });
+    setIsDragging(false);
   };
 
   const stopDragging = () => {
     setDraggingNodeId(null);
     setDragStartPosition(null);
+    setIsDragging(false);
   };
 
   const handleDrag = (e: any) => {
@@ -64,7 +71,9 @@ export default function SkillTreePage() {
     const mouseX = e.clientX - boundingRect.left;
     const mouseY = e.clientY - boundingRect.top;
 
-    const updatedNodes = currentTree.nodes.map((node) =>
+    setIsDragging(true);
+
+    const updatedNodes = currentTree.nodes.map(node =>
       node.id === draggingNodeId ? { ...node, x: mouseX, y: mouseY } : node
     );
 
@@ -128,7 +137,6 @@ export default function SkillTreePage() {
         )
       );
     }
-
     setShowMenu(false);
   };
 
@@ -204,25 +212,6 @@ export default function SkillTreePage() {
                 }}
                 onMouseDown={(e) => { if (e.button === 0) startDragging(node.id, e.clientX, e.clientY); }}
                 onContextMenu={(e) => handleNodeRightClick(e, node)}
-                onClick={(e) => {
-                  if (!dragStartPosition) return;
-                  const dx = dragStartPosition.x - e.clientX;
-                  const dy = dragStartPosition.y - e.clientY;
-                  const distance = Math.sqrt(dx * dx + dy * dy);
-                  if (distance > 5) {
-                    setDragStartPosition(null);
-                    return;
-                  }
-                  if (node.parentId && !selectedNodes.includes(node.parentId)) {
-                    alert("Skill Locked: Unlock parent first!");
-                    setDragStartPosition(null);
-                    return;
-                  }
-                  setSelectedNodes(prev =>
-                    prev.includes(node.id) ? prev.filter(nid => nid !== node.id) : [...prev, node.id]
-                  );
-                  setDragStartPosition(null);
-                }}
               >
                 <Text style={{ color: isSelected ? theme.colors.onPrimary : isParentUnlocked ? theme.colors.onSecondaryContainer : "white", fontWeight: "bold", fontSize: 12, textAlign: "center" }}>{node.label}</Text>
               </div>
@@ -237,6 +226,7 @@ export default function SkillTreePage() {
 
   return (
     <SafeAreaView style={{ flex: 1, flexDirection: "row", backgroundColor: theme.colors.background }}>
+      {/* Sidebar */}
       <View style={{ width: 220, padding: 10, backgroundColor: theme.colors.surfaceVariant }}>
         <Text style={{ fontWeight: "bold", marginBottom: 10, color: theme.colors.onSurfaceVariant, fontSize: 18 }}>Skill Trees</Text>
         <ScrollView style={{ marginBottom: 10 }}>
@@ -264,38 +254,43 @@ export default function SkillTreePage() {
         <Button mode="contained" onPress={createNewTree}>Create Tree</Button>
       </View>
 
-      <div style={{ flex: 1, position: "relative", width: "100%", height: "100%" }} onMouseMove={handleDrag} onMouseUp={stopDragging} onContextMenu={handleCanvasRightClick}>
+      {/* Canvas */}
+      <div
+        style={{ flex: 1, position: "relative", width: "100%", height: "100%" }}
+        onMouseMove={handleDrag}
+        onMouseUp={(e) => {
+          if (!isDragging && draggingNodeId) {
+            const clickedNode = currentTree?.nodes.find(n => n.id === draggingNodeId);
+            if (clickedNode) {
+              if (clickedNode.parentId && !selectedNodes.includes(clickedNode.parentId)) {
+                alert("Skill Locked: Unlock parent first!");
+              } else {
+                setSelectedNodes(prev =>
+                  prev.includes(clickedNode.id)
+                    ? prev.filter(id => id !== clickedNode.id)
+                    : [...prev, clickedNode.id]
+                );
+              }
+            }
+          }
+          stopDragging();
+        }}
+        onContextMenu={handleCanvasRightClick}
+      >
         {renderTree()}
       </div>
 
+      {/* Right Click Menu */}
       {showMenu && (
-  <div
-    style={{
-      position: "absolute",
-      top: menuPosition.y,
-      left: menuPosition.x,
-      backgroundColor: theme.colors.surface,
-      padding: 10,
-      borderRadius: 6,
-      boxShadow: "0px 2px 10px rgba(0,0,0,0.2)",
-      zIndex: 100,
-    }}
-  >
-    <TouchableOpacity onPress={() => handleMenuAction("add")}>
-      <Text style={{ padding: 8, color: theme.colors.primary }}> Add Node</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => handleMenuAction("rename")}>
-      <Text style={{ padding: 8, color: theme.colors.primary }}> Rename</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => handleMenuAction("delete")}>
-      <Text style={{ padding: 8, color: "red" }}> Delete</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={() => setShowMenu(false)}>
-      <Text style={{ padding: 8, color: theme.colors.onSurfaceVariant }}> Cancel</Text>
-    </TouchableOpacity>
-  </div>
-)}
+        <div style={{ position: "absolute", top: menuPosition.y, left: menuPosition.x, backgroundColor: theme.colors.surface, padding: 10, borderRadius: 6, boxShadow: "0px 2px 10px rgba(0,0,0,0.2)", zIndex: 100 }}>
+          <TouchableOpacity onPress={() => handleMenuAction("add")}><Text style={{ padding: 8, color: theme.colors.primary }}>Add Node</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => handleMenuAction("rename")}><Text style={{ padding: 8, color: theme.colors.primary }}>Rename</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => handleMenuAction("delete")}><Text style={{ padding: 8, color: "red" }}>Delete</Text></TouchableOpacity>
+          <TouchableOpacity onPress={() => setShowMenu(false)}><Text style={{ padding: 8, color: theme.colors.onSurfaceVariant }}>Cancel</Text></TouchableOpacity>
+        </div>
+      )}
 
+      {/* Input Modal */}
       <Modal transparent={true} visible={showInputModal} animationType="fade">
         <View style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.3)", justifyContent: "center", alignItems: "center" }}>
           <View style={{ width: 300, backgroundColor: theme.colors.surface, borderRadius: 8, padding: 20 }}>
