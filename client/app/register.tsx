@@ -11,18 +11,25 @@ export default function Register() {
 
   const handleRegister = async () => {
     try {
-      const { access_token } = await registerUser(email, password);
-      await SecureStore.setItemAsync("token", access_token);
-      
-      // Add this line:
-      const savedToken = await SecureStore.getItemAsync("token");
-      console.log("Saved token:", savedToken);
-  
-      Alert.alert("Success", "Account created!");
-      router.push("/login"); // or dashboard route
+      const response = await registerUser(email, password);
+      console.log("Registration successful", response);
+      Alert.alert("Success", "Registered!");
+      router.push("/login");
     } catch (err: any) {
-      Alert.alert("Registration Failed", err.message);
-      console.error("Registration error:", err);
+      let errorMessage = "An unknown error occurred";
+  
+      if (err instanceof Error) {
+        errorMessage = err.message;
+      } else if (typeof err === "object") {
+        try {
+          errorMessage = JSON.stringify(err);
+        } catch (e) {
+          errorMessage = "Error parsing error message";
+        }
+      }
+  
+      Alert.alert("Registration Failed", errorMessage);
+      console.error("registerError", errorMessage);
     }
   };
 

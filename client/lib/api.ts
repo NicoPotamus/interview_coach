@@ -1,21 +1,24 @@
 import { API_URL } from "@/constants/config";
 
-export const registerUser = async (email: string, password: string) => {
-  const response = await fetch(`${API_URL}/register`, {
+export async function registerUser(email: string, password: string) {
+  const payload = { email, password };
+
+  const res = await fetch(`${API_URL}/auth/register`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ email, password }),
+    body: JSON.stringify(payload),
   });
 
-  if (!response.ok) {
-    const errorData = await response.json();
-    throw new Error(errorData.detail || "Registration failed");
+  const data = await res.json();
+
+  if (!res.ok) {
+    throw new Error(data.detail || "Registration failed");
   }
 
-  return response.json();
-};
+  return data;
+}
 
 export async function loginUser(email: string, password: string) {
   const response = await fetch(`${API_URL}/login`, {
