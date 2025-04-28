@@ -9,10 +9,6 @@ from app.database import Base, engine
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-app.include_router(users.router)
-app.include_router(scraper.router)  
-app.include_router(auth_routes.router)
-
 
 origins = [
     "http://localhost",
@@ -20,7 +16,7 @@ origins = [
     "https://hydra.newpaltz.edu",
     "http://hydra.newpaltz.edu"
     "http://192.168.1.160:8081",
-    "https://192.168.1.160:8081/"
+    "https://192.168.1.160:8081/",
     "https://brybytes.com"
 ]
 
@@ -31,6 +27,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(users.router)
+app.include_router(scraper.router)  
+app.include_router(auth_routes.router)
+
 
 
 # JWT Settings using Pydantic
