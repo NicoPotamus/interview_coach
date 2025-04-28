@@ -2,8 +2,8 @@ import * as React from "react";
 import { View, StyleSheet } from "react-native";
 import { Card, Title, Text, Button, TextInput } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { parseUrl,  type skillStat } from "@/app/models/scraper";
-import OutputDisplay from "@/app/components/OutputDisplay";
+import { parseUrl,  type skillStat } from "@/models/scraper";
+import OutputDisplay from "@/app/protected/OutputDisplay";
 
 export default function JobPostings() {
   const [jobUrl, setJobUrl] = React.useState("");

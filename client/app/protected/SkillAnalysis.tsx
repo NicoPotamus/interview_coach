@@ -2,8 +2,8 @@ import * as React from "react";
 import { View, StyleSheet } from "react-native";
 import { Card, Title, TextInput, Button } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { quereyModel, type skillStat } from "@/app/models/scraper";
-import OutputDisplay from "@/app/components/OutputDisplay";
+import { quereyModel, type skillStat } from "@/models/scraper";
+import OutputDisplay from "@/app/protected/OutputDisplay";
 
 export default function SkillAnalysis() {
   const [description, setDescription] = React.useState("");
