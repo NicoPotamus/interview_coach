@@ -14,4 +14,13 @@ def rank_skills(skills):
             
     sorted_skills = sorted(skill_counts.items(), key=lambda x: x[1], reverse=True)
 
+    sorted_skills = [
+        {"skill": skill, "frequency": count} 
+        for skill, count in sorted(
+            skill_counts.items(), 
+            key=lambda x: x[1], 
+            reverse=True
+        )
+    ]
+    
     return sorted_skills

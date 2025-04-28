@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Request, HTTPException
-from model.scraper.scraper import search_jobs
+from model.scraper.scraper import search_jobs, scrape_job
 from model.scraper.getTrainingData import get_training_data, scrape_training_data
 from NeuralNetwork.querey import NER_description
 from NeuralNetwork.training.training_pipe import generate_training_data
@@ -31,6 +31,42 @@ def scrape_web(job: str, location: str):
     return ranked_skills
 
 
+@router.get("api/vi1/urlParser")
+def parse_url(url: str):
+    """
+    Parse a URL and return the job title and location.
+    Example: /api/v1/urlParser?url=https://example.com/job/12345
+    """
+    if not url:
+        raise HTTPException(status_code=400, detail="URL parameter is required")
+
+    try:
+        job_obj = scrape_job(url)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"URL parsing error: {e}")
+
+    try:
+        skills = NER_description(job_obj['description'])
+    except:
+        raise HTTPException(status_code=500, detail="NER error")
+    
+    ranked_skills = rank_skills(skills)
+    return ranked_skills
+
+@router.get("/api/v1/querey")
+def query_ner(description: str):
+    """
+    Query the NER model with a job title and location.
+    Example: /api/v1/querey?description= ..
+    """
+    try:
+        skills = NER_description(description)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"NER query error: {e}")
+    
+    ranked_skills = rank_skills(skills)
+    return ranked_skills
+    
 @router.get("/api/v1/gendata")
 def gen_data():
     """

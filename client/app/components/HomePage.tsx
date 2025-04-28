@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Banner, Button, TextInput } from "react-native-paper";
-import searchJob from "@/app/models/scraper";
+import searchJob, {type skillStat} from "@/app/models/scraper";
 import OutputDisplay from "@/app/components/OutputDisplay";
 
 export default function HomePage() {
@@ -20,8 +20,8 @@ export default function HomePage() {
       const response = await searchJob(jobTitle, jobLocation);
       console.log("Response from scraper:", response);
       const formattedSkills = response.map(
-        ([skill, count]: [string, number]) =>
-          `${skill} - Identified in ${count} job postings`
+        (entry: skillStat) =>
+          `${entry.skill} - Identified in ${entry.frequency} job postings`
       );
       setOutput(formattedSkills);
     } catch (error) {
