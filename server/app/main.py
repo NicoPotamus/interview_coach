@@ -20,6 +20,7 @@ origins = [
     "https://hydra.newpaltz.edu",
     "http://192.168.1.160:8081",
     "https://192.168.1.160:8081/"
+    "https://brybytes.com"
 ]
 
 app.add_middleware(
