@@ -1,6 +1,6 @@
 import * as React from "react";
-import { View, Text, FlatList, StyleSheet, ScrollView } from "react-native";
-import { Card, Title } from "react-native-paper";
+import { View, Text, FlatList, Platform } from "react-native";
+import { Card, Title, ActivityIndicator } from "react-native-paper";
 
 interface OutputDisplayProps {
   title: string;
@@ -10,47 +10,39 @@ interface OutputDisplayProps {
 
 export default function OutputDisplay({ title, data, loading = false }: OutputDisplayProps) {
   return (
-    <ScrollView style={styles.scrollView}>
-      <Card style={styles.card}>
-        <Card.Content>
-          <Title>{title}</Title>
-          <View style={styles.contentContainer}>
-            {loading ? (
-              <Text>Loading data...</Text>
-            ) : data.length > 0 ? (
-              <FlatList
-                data={data}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({ item }) => (
-                  <Text style={styles.listItem}>{`\u2022 ${item}`}</Text>
-                )}
-                scrollEnabled={false} // Disable FlatList scrolling since we're using ScrollView
-                nestedScrollEnabled={true}
-              />
-            ) : (
-              <Text>No data available</Text>
-            )}
-          </View>
+    <View 
+      className="w-full" 
+      style={{ 
+        height: Platform.OS === 'web' ? 300 : undefined,
+        minHeight: Platform.OS === 'web' ? 300 : undefined
+      }}
+    >
+      <Card className="m-2 h-full">
+        <Card.Content className="h-full flex flex-col">
+          <Title className="text-xl font-bold mb-2">{title}</Title>
+          {loading ? (
+            <View className="flex items-center justify-center py-4">
+              <ActivityIndicator size="large" />
+            </View>
+          ) : (
+            <FlatList
+              data={data}
+              keyExtractor={(item, index) => index.toString()}
+              renderItem={({ item }) => (
+                <Text className="text-sm py-1 leading-5">
+                  {`\u2022 ${item}`}
+                </Text>
+              )}
+              scrollEnabled={true}
+              showsVerticalScrollIndicator={true}
+              style={{ 
+                height: Platform.OS === 'web' ? 250 : undefined,
+                overflow: Platform.OS === 'web' ? 'scroll' : undefined
+              }}
+            />
+          )}
         </Card.Content>
       </Card>
-    </ScrollView>
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  scrollView: {
-    flex: 1,
-    width: '100%',
-  },
-  card: {
-    marginVertical: 8,
-    marginHorizontal: 4,
-  },
-  contentContainer: {
-    marginTop: 10,
-  },
-  listItem: {
-    marginVertical: 4,
-    fontSize: 16,
-  }
-});
