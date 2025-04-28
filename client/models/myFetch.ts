@@ -1,4 +1,4 @@
-const API_URL = process.env.EXPO_PUBLIC_API_URL
+import { API_URL } from "@/constants/config";
 
 export function rest<T>(
   url: string,
