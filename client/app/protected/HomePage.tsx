@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity, Dimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Banner, Button, TextInput } from "react-native-paper";
+import { Banner, Button, TextInput, useTheme } from "react-native-paper";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import searchJob, {type skillStat} from "@/models/scraper";
+import searchJob, { type skillStat } from "@/models/scraper";
 import OutputDisplay from "@/app/protected/OutputDisplay";
 
 interface RecentSearch {
@@ -13,12 +13,17 @@ interface RecentSearch {
 }
 
 export default function HomePage() {
+  const theme = useTheme();
+  const isDark = theme.dark;
+
   const [visible, setVisible] = useState(true);
   const [jobTitle, setJobTitle] = useState("");
   const [jobLocation, setJobLocation] = useState("");
   const [output, setOutput] = useState<string[]>([]);
   const [recentSearches, setRecentSearches] = useState<RecentSearch[]>([]);
   const [loading, setLoading] = useState(false);
+
+  const screenHeight = Dimensions.get('window').height;
 
   useEffect(() => {
     loadRecentSearches();
@@ -34,7 +39,7 @@ export default function HomePage() {
   const saveRecentSearch = async (search: RecentSearch) => {
     const updatedSearches = [search, ...recentSearches.filter(
       s => !(s.title === search.title && s.location === search.location)
-    )].slice(0, 5); // Keep only last 5
+    )].slice(0, 5); 
     setRecentSearches(updatedSearches);
     await AsyncStorage.setItem("recentSearches", JSON.stringify(updatedSearches));
   };
@@ -47,7 +52,6 @@ export default function HomePage() {
   const handleSearch = async () => {
     if (!jobTitle) return;
 
-    // Check if already cached
     const cached = recentSearches.find(
       s => s.title.toLowerCase() === jobTitle.toLowerCase() &&
            s.location.toLowerCase() === jobLocation.toLowerCase()
@@ -85,15 +89,15 @@ export default function HomePage() {
   };
 
   return (
-    <SafeAreaView className="flex-1">
+    <SafeAreaView className="flex-1" style={{ backgroundColor: theme.colors.background }}>
       <View className="flex-1 justify-center">
-        <Text className="font-bold text-2xl text-center">Interview Coach</Text>
+        <Text className="font-bold text-2xl text-center" style={{ color: theme.colors.onBackground }}>
+          Interview Coach
+        </Text>
 
         <Banner
           visible={visible}
-          actions={[
-            { label: "Continue", onPress: () => setVisible(false) },
-          ]}
+          actions={[{ label: "Continue", onPress: () => setVisible(false) }]}
           icon={({ size }) => (
             <Image
               source={{ uri: "https://avatars3.githubusercontent.com/u/17571969?s=400&v=4" }}
@@ -138,7 +142,9 @@ export default function HomePage() {
         {/* Recent Searches */}
         {recentSearches.length > 0 && (
           <View className="mt-6">
-            <Text className="text-lg font-bold mb-2 text-center">Recent Searches:</Text>
+            <Text className="text-lg font-bold mb-2 text-center" style={{ color: theme.colors.onBackground }}>
+              Recent Searches:
+            </Text>
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} className="flex-row px-4">
               {recentSearches.map((search, index) => (
@@ -149,11 +155,13 @@ export default function HomePage() {
                     marginHorizontal: 6, 
                     marginBottom: 10, 
                     padding: 10, 
-                    backgroundColor: "#e0e0e0", 
+                    backgroundColor: isDark ? "#333333" : "#e0e0e0",
                     borderRadius: 8 
                   }}
                 >
-                  <Text>{search.title} - {search.location}</Text>
+                  <Text style={{ color: isDark ? "#ffffff" : "#000000" }}>
+                    {search.title} - {search.location}
+                  </Text>
                 </TouchableOpacity>
               ))}
             </ScrollView>
@@ -172,8 +180,14 @@ export default function HomePage() {
         )}
       </View>
 
-      <View className="flex-1 p-4">
-        <OutputDisplay title="Required Skills" data={output} loading={loading} />
+      {/* Skills Output */}
+      <View style={{ paddingHorizontal: 16, paddingBottom: 16, flexGrow: 1 }}>
+        <OutputDisplay 
+          title="Required Skills" 
+          data={output} 
+          loading={loading} 
+          textColor={isDark ? "#ffffff" : "#000000"}
+        />
       </View>
     </SafeAreaView>
   );

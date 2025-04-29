@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "client",
-    "slug": "client",
+    "name": "Interview Coach",
+    "slug": "Interview Coach",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -23,7 +23,11 @@
         "publicPath": "/interview_coach/"
       },
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.ico",
+      "icons": {
+          "favicon-16":"./assets/images/favicon.png",
+          "favicon-32":"./assets/images/favicon.png"
+      }
     },
     "plugins": [
       "expo-router",
