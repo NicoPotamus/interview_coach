@@ -31,7 +31,7 @@ def scrape_web(job: str, location: str):
     return ranked_skills
 
 
-@router.get("api/vi1/urlParser")
+@router.get("/api/v1/urlParser")
 def parse_url(url: str):
     """
     Parse a URL and return the job title and location.

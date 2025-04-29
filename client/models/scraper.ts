@@ -24,7 +24,7 @@ export function parseUrl(jobUrl: string) {
     return null;
   }
   
-  return api<skillStat[]>(`api/v1/urlParser?url=${jobUrl}`)
+  return api<skillStat[]>(`/api/v1/urlParser?url=${jobUrl}`)
     .then((response) => {
       return response; // Handle the resolved value here
     })
@@ -40,7 +40,7 @@ export function quereyModel(description: string){
     return null;
   }
   
-  return api<skillStat[]>(`api/v1/query?description=${description}`)
+  return api<skillStat[]>(`/api/v1/querey?description=${description}`)
     .then((response) => {
       return response; // Handle the resolved value here
     })
