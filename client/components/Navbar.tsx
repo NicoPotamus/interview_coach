@@ -12,7 +12,7 @@ const HomeRoute = () => <HomePage />;
 const JobsRoute = () => <JobPostings />;
 const AnalysisRoute = () => <SkillAnalysis />;
 const SkillTreeRoute = () => <SkillTree />; // <-- Add SkillTree route
-const SettingsRoute = () => null; // Still a settings page if needed
+//const SettingsRoute = () => null; // Still a settings page if needed
 
 const Navbar = () => {
   const { logout } = useAuth();
@@ -25,7 +25,7 @@ const Navbar = () => {
     { key: "jobs", title: "Job Listings", focusedIcon: "briefcase", unfocusedIcon: "briefcase-outline" },
     { key: "analysis", title: "Skills", focusedIcon: "chart-bar", unfocusedIcon: "chart-bar" },
     { key: "skilltree", title: "Skill Tree", focusedIcon: "tree", unfocusedIcon: "tree-outline" }, // <-- New Skill Tree tab
-    { key: "settings", title: "Settings", focusedIcon: "cog", unfocusedIcon: "cog-outline" },
+    //{ key: "settings", title: "Settings", focusedIcon: "cog", unfocusedIcon: "cog-outline" },
     { key: "logout", title: "Logout", focusedIcon: "logout", unfocusedIcon: "logout" },
   ]);
 
@@ -34,7 +34,6 @@ const Navbar = () => {
     jobs: JobsRoute,
     analysis: AnalysisRoute,
     skilltree: SkillTreeRoute, // <-- Hook in SkillTree scene
-    settings: SettingsRoute,
     logout: () => null,
   });
 
