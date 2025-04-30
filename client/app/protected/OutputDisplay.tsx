@@ -71,7 +71,7 @@ export default function OutputDisplay({
                       color: finalTextColor                // Adjust text color for theme
                     }}
                   >
-                    {index + 1}. {item}                    // Numbered item
+                    {index + 1}. {item}                   
                   </Text>
                 </Card>
               )}
