@@ -3,7 +3,7 @@ import { ActivityIndicator, View, StyleSheet, Text } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 interface LoadingScreenProps {
-  message?: string; // <- optional message
+  message?: string; 
 }
 
 export default function LoadingScreen({ message }: LoadingScreenProps) {

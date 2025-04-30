@@ -17,6 +17,5 @@ export function rest<T>(
 }
 
 export function api<T>(url: string, data?: any, method?: string): Promise<T> {
-  console.log('API URL:', API_URL + url) // Log the full URL
   return rest<T>(API_URL + url, data, method)
 }

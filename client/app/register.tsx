@@ -1,38 +1,58 @@
+// Import React and hooks
 import { useState } from "react";
+
+// Import UI components
 import { View } from "react-native";
 import { TextInput, Button, Title, Text } from "react-native-paper";
+
+// Import API call to register the user
 import { registerUser } from "@/lib/api";
+
+// Import navigation hook from Expo Router
 import { useRouter } from "expo-router";
+
+// Optional: SecureStore if needed for future token storage (currently unused)
 import * as SecureStore from "expo-secure-store";
 
+// Define the Register screen component
 export default function Register() {
-  const router = useRouter();
+  const router = useRouter();  // Used for navigation after registration
+
+  // Form state variables
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  // Loading and error states
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // Function to handle the registration process
   const handleRegister = async () => {
+    // Validate that both fields are filled
     if (!email || !password) {
       setError("Please fill in all fields");
       return;
     }
 
-    setLoading(true);
-    setError("");
+    setLoading(true);  // Start loading indicator
+    setError("");      // Clear previous errors
 
     try {
+      // Call the API to register the user
       const response = await registerUser(email, password);
       console.log("Registration successful", response);
+
+      // Navigate to login screen after successful registration
       router.push("/login");
     } catch (err: any) {
+      // Initialize a default error message
       let errorMessage = "An unknown error occurred";
-  
+
+      // Attempt to safely extract message from various error types
       if (err instanceof Error) {
         errorMessage = err.message;
       } else if (typeof err === "object" && err !== null) {
         try {
-          // Try to get error message from response data
           if ('response' in err && err.response?.data) {
             errorMessage = err.response.data.detail || err.response.data.message || JSON.stringify(err.response.data);
           } else {
@@ -42,21 +62,26 @@ export default function Register() {
           errorMessage = "Failed to parse error message";
         }
       }
-  
+
+      // Set the error message in state and log it
       setError(errorMessage);
       console.error("registerError:", { originalError: err, parsedMessage: errorMessage });
     } finally {
+      // Stop loading whether success or failure
       setLoading(false);
     }
   };
 
+  // Return the registration UI
   return (
     <View className="flex-1 p-4 justify-center">
       <View className="bg-white p-6 rounded-lg shadow-md">
+        {/* Page title */}
         <Title className="text-center text-xl font-bold mb-6">
           Create Account
         </Title>
-        
+
+        {/* Email input field */}
         <TextInput
           label="Email"
           value={email}
@@ -68,6 +93,7 @@ export default function Register() {
           disabled={loading}
         />
 
+        {/* Password input field */}
         <TextInput
           label="Password"
           value={password}
@@ -78,6 +104,7 @@ export default function Register() {
           disabled={loading}
         />
 
+        {/* Error message display */}
         {error && (
           <Text 
             variant="bodyMedium" 
@@ -88,6 +115,7 @@ export default function Register() {
           </Text>
         )}
 
+        {/* Submit registration button */}
         <Button
           mode="contained"
           onPress={handleRegister}
@@ -98,6 +126,7 @@ export default function Register() {
           Register
         </Button>
 
+        {/* Link to login screen */}
         <Button
           mode="text"
           onPress={() => router.push("/login")}
